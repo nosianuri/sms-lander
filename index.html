@@ -72,7 +72,7 @@
                 </div>
                 <!-- menu btn -->
                 <div class="flex">
-                    <a href="#"
+                    <a href="login.html"
                         class="mr-10 hidden rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-600 sm:block lg:mr-0">Register</a>
 
                     <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'"
@@ -101,11 +101,11 @@
                     <button
                         class="w-full rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-600 duration-200 sm:w-auto">Get
                         Started</button>
-
-                    <button
-                        class="mt-4 box-border w-full rounded-md border border-blue-500/20 px-8 py-2.5 font-semibold text-blue-500 shadow-md shadow-blue-500/10 duration-200 sm:ml-4 sm:mt-0 sm:w-auto">Register
-                        Now</button>
-
+                    <a href="login.html">
+                        <button
+                            class="mt-4 box-border w-full rounded-md border border-blue-500/20 px-8 py-2.5 font-semibold text-blue-500 shadow-md shadow-blue-500/10 duration-200 sm:ml-4 sm:mt-0 sm:w-auto">Register
+                            Now</button>
+                    </a>
                     <!-- brand -->
                     <div class="mt-6 flex flex-wrap gap-4">
                         <img src="assets/brand (1).png" alt="brand"
@@ -618,80 +618,88 @@
     <!-- ==== Contact ==== -->
     <section class="relative overflow-hidden py-16 ">
         <div class="mx-auto max-w-7xl px-8 md:px-6">
-        <img src="assets/effect.png" alt="effect" class="absolute bottom-[-400px] -z-10 w-full opacity-[0.2]">
-        <div class="mx-auto max-w 7xl px-8 md:px-6">
-            <div class="mx-4 flex flex-wrap lg:justify-between">
-                <!-- left -->
-                <div class="w-full px-4 md:w-1/2 xl:w-6/12">
-                    <div class="mb-12 max-w-[570px] lg:mb-0">
-                        <!-- <span class="font-medium text-blue-500">Contact Us</span> -->
-                        <h1 class="mb-3 text-2xl font-bold text-slate-700 sm:text-3xl">GET IN TOUCH WITH US</h1>
-                        <p class="text-slate-500 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                            praesentium adipisci incidunt obcaecati, mollitia deleniti ex maiores, soluta sapiente,
-                            itaque libero reiciendis porro officiis dolore?</p>
-                        <!-- address -->
-                        <div
-                            class="mb-8 flex w-full max-w-[420px] items-center rounded-lg bg-white p-4 shadow-md shadow-blue-500/10 gap-5">
+            <img src="assets/effect.png" alt="effect" class="absolute bottom-[-400px] -z-10 w-full opacity-[0.2]">
+            <div class="mx-auto max-w 7xl px-8 md:px-6">
+                <div class="mx-4 flex flex-wrap lg:justify-between">
+                    <!-- left -->
+                    <div class="w-full px-4 md:w-1/2 xl:w-6/12">
+                        <div class="mb-12 max-w-[570px] lg:mb-0">
+                            <!-- <span class="font-medium text-blue-500">Contact Us</span> -->
+                            <h1 class="mb-3 text-2xl font-bold text-slate-700 sm:text-3xl">GET IN TOUCH WITH US</h1>
+                            <p class="text-slate-500 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Minima
+                                praesentium adipisci incidunt obcaecati, mollitia deleniti ex maiores, soluta sapiente,
+                                itaque libero reiciendis porro officiis dolore?</p>
+                            <!-- address -->
                             <div
-                                class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-blue-500 bg-opacity-5 text-blue-500 sm:h-[70px] sm:max-w-[70px]">
-                                <ion-icon name="location-outline" class="text-3xl"></ion-icon>
+                                class="mb-8 flex w-full max-w-[420px] items-center rounded-lg bg-white p-4 shadow-md shadow-blue-500/10 gap-5">
+                                <div
+                                    class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-blue-500 bg-opacity-5 text-blue-500 sm:h-[70px] sm:max-w-[70px]">
+                                    <ion-icon name="location-outline" class="text-3xl"></ion-icon>
+                                </div>
+                                <div class="w-full">
+                                    <h4 class="mb-1 text-xl font-bold text-slate-700">Our Location</h4>
+                                    <p class="text-base text-slate-400">4236 Woodland Terrace. Sacramento. California
+                                    </p>
+                                </div>
                             </div>
-                            <div class="w-full">
-                                <h4 class="mb-1 text-xl font-bold text-slate-700">Our Location</h4>
-                                <p class="text-base text-slate-400">4236 Woodland Terrace. Sacramento. California</p>
-                            </div>
-                        </div>
-                        <!-- phone -->
-                        <div
-                            class="mb-8 flex w-full max-w-[420px] items-center rounded-lg bg-white p-4 shadow-md shadow-blue-500/10 gap-5">
+                            <!-- phone -->
                             <div
-                                class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-blue-500 bg-opacity-5 text-blue-500 sm:h-[70px] sm:max-w-[70px]">
-                                <ion-icon name="call-outline" class="text-3xl"></ion-icon>
+                                class="mb-8 flex w-full max-w-[420px] items-center rounded-lg bg-white p-4 shadow-md shadow-blue-500/10 gap-5">
+                                <div
+                                    class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-blue-500 bg-opacity-5 text-blue-500 sm:h-[70px] sm:max-w-[70px]">
+                                    <ion-icon name="call-outline" class="text-3xl"></ion-icon>
+                                </div>
+                                <div class="w-full">
+                                    <h4 class="mb-1 text-xl font-bold text-slate-700">Phone Number</h4>
+                                    <p class="text-base text-slate-400">(888) 111-1111</p>
+                                </div>
                             </div>
-                            <div class="w-full">
-                                <h4 class="mb-1 text-xl font-bold text-slate-700">Phone Number</h4>
-                                <p class="text-base text-slate-400">(888) 111-1111</p>
-                            </div>
-                        </div>
-                        <!-- mail -->
-                        <div
-                            class="mb-8 flex w-full max-w-[420px] items-center rounded-lg bg-white p-4 shadow-md shadow-blue-500/10 gap-5">
+                            <!-- mail -->
                             <div
-                                class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-blue-500 bg-opacity-5 text-blue-500 sm:h-[70px] sm:max-w-[70px]">
-                                <ion-icon name="mail-outline" class="text-3xl"></ion-icon>
-                            </div>
-                            <div class="w-full">
-                                <h4 class="mb-1 text-xl font-bold text-slate-700">Email Address</h4>
-                                <p class="text-base text-slate-400">smsthunder@gmail.com</p>
+                                class="mb-8 flex w-full max-w-[420px] items-center rounded-lg bg-white p-4 shadow-md shadow-blue-500/10 gap-5">
+                                <div
+                                    class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-blue-500 bg-opacity-5 text-blue-500 sm:h-[70px] sm:max-w-[70px]">
+                                    <ion-icon name="mail-outline" class="text-3xl"></ion-icon>
+                                </div>
+                                <div class="w-full">
+                                    <h4 class="mb-1 text-xl font-bold text-slate-700">Email Address</h4>
+                                    <p class="text-base text-slate-400">smsthunder@gmail.com</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- right contact -->
-                <div class="w-full px-4 md:w-1/2 xl:w-5/12">
-                    <div class="relative rounded-lg bg-white p-8 shadow-lg shadow-blue-500/10 sm:p-12">
-                        <form action="">
-                            <div class="mb-6">
-                                <input type="text" placeholder="Your Name" class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none">
-                            </div>
-                            <div class="mb-6">
-                                <input type="email" placeholder="Your Email" class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none">
-                            </div>
-                            <div class="mb-6">
-                                <input type="password" placeholder="Your Password" class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none">
-                            </div>
-                            <div class="mb-6">
-                                <textarea name="message" id="" cols="30" rows="6" class="resize-none w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none"></textarea>
-                            </div>
-                            <div class="">
-                                <button type="submit" class="w-full rounded border border-blue-300 bg-blue-500 p-3 text-white transition-all hover:bg-opacity-90">Send Message</button>
-                            </div>
-                        </form>
+                    <!-- right contact -->
+                    <div class="w-full px-4 md:w-1/2 xl:w-5/12">
+                        <div class="relative rounded-lg bg-white p-8 shadow-lg shadow-blue-500/10 sm:p-12">
+                            <form action="">
+                                <div class="mb-6">
+                                    <input type="text" placeholder="Your Name"
+                                        class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none">
+                                </div>
+                                <div class="mb-6">
+                                    <input type="email" placeholder="Your Email"
+                                        class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none">
+                                </div>
+                                <div class="mb-6">
+                                    <input type="password" placeholder="Your Password"
+                                        class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none">
+                                </div>
+                                <div class="mb-6">
+                                    <textarea name="message" id="" cols="30" rows="6"
+                                        class="resize-none w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none"></textarea>
+                                </div>
+                                <div class="">
+                                    <button type="submit"
+                                        class="w-full rounded border border-blue-300 bg-blue-500 p-3 text-white transition-all hover:bg-opacity-90">Send
+                                        Message</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
     <!-- ==== End Contact ==== -->
 
@@ -703,8 +711,10 @@
                 <div class="md:max-w-md lg:col-span-2">
                     <img src="assets/logo (1).png" alt="footer img" class="w-36">
                     <div class="mt-4 lg:max-w-sm">
-                        <p class="text-sm text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maiores temporibus ea. Nisi, sit sed!</p>
-                        <p class="text-sm text-slate-500 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime sed dicta consequatur earum vel commodi perferendis.</p>
+                        <p class="text-sm text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+                            maiores temporibus ea. Nisi, sit sed!</p>
+                        <p class="text-sm text-slate-500 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Maxime sed dicta consequatur earum vel commodi perferendis.</p>
                     </div>
                 </div>
 
@@ -713,58 +723,98 @@
                         <!-- head -->
                         <p class="font-semibold text-slate-700">Category</p>
                         <ul class="mt-2 space-y-2">
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">News</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">World</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Games</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Reference</a></li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">News</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">World</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Games</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Reference</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="">
                         <!-- head -->
                         <p class="font-semibold text-slate-700">Business</p>
                         <ul class="mt-2 space-y-2">
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Web</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">eCommerce</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Business</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Entertainment</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Portfolio</a></li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Web</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">eCommerce</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Business</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Entertainment</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Portfolio</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="">
                         <!-- head -->
                         <p class="font-semibold text-slate-700">Apples</p>
                         <ul class="mt-2 space-y-2">
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Media</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Brouchre</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">NonProfit</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Educational</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Projects</a></li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Media</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Brouchre</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">NonProfit</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Educational</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Projects</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="">
-                        
+
                         <p class="font-semibold text-slate-700">Cherry</p>
                         <ul class="mt-2 space-y-2">
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Infopreneur</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Personal</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Wiki</a></li>
-                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Forum</a></li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Infopreneur</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Personal</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Wiki</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Forum</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <!-- footer bottom -->
             <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
-                <p class="text-s, text-slate-500">© Copyright 2023 <a href="#" class="text-slate-700 hover:text-blue-500">smsthunder</a>All rights reserved.</p>
+                <p class="text-s, text-slate-500">© Copyright 2023 <a href="#"
+                        class="text-slate-700 hover:text-blue-500">smsthunder</a>All rights reserved.</p>
                 <div class="mt-4 flex items-center space-x-4 sm:mt-0">
                     <a href="#">
-                        <ion-icon name="logo-facebook" class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
+                        <ion-icon name="logo-facebook"
+                            class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
                     </a>
                     <a href="#">
-                        <ion-icon name="logo-twitter" class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
+                        <ion-icon name="logo-twitter"
+                            class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
                     </a>
                     <a href="#">
-                        <ion-icon name="logo-instagram" class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
+                        <ion-icon name="logo-instagram"
+                            class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
                     </a>
                 </div>
             </div>
