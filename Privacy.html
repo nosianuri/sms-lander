@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Privacy</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ionicons cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- alpine js cdn -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- style css -->
+    <style type="text/tailwindcss">
+        body{
+     font-family: 'Inter', sans-serif;
+ }
+     </style>
 </head>
+
 <body>
+    <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 bg-white/90 w-full backdrop-blur">
+        <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
+            <div class="relative flex h-full items-center justify-between border-b border-slate-500/10">
+                <!-- logo -->
+                <div class="w-[15rem] max-w-full">
+                    <a href="#">
+                        <img src="assets/logo (1).png" alt="logo" class="w-full">
+                    </a>
+                </div>
+
+                <!-- menu -->
+                <div class="flex w-full items-center justify-between">
+                    <nav x-transition :class="!navbarOpen && 'hidden'" id="navbarCollapse"
+                        class="absolute right-0 top-[90px] w-full max-w-[350px]  rounded-lg border border-blue-200 bg-white py-5 px-6 shadow-lg shadow-blue-400/5 transition-all lg:static lg:block lg:max-w-full lg:border-none lg:shadow-none lg:bg-transparent lg:px-0 lg:py-0">
+                        <ul class="flex flex-col justify-center gap-8 lg:flex-row">
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Home</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">About</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Services</a>
+                            </li>
+                            <!-- <li>
+                                    <a href="#"
+                                        class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Portfolio</a>
+                                </li> -->
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu btn -->
+                <div class="flex">
+                    <a href="login.html"
+                        class="mr-10 hidden rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-600 sm:block lg:mr-0">Register</a>
+                    <img src="assets/moon.png" alt="moon img" id="icon">
+
+                    <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'"
+                        id="navbarToggler" class="block lg:hidden">
+                        <ion-icon name="menu-outline" class="text-4xl text-blue-500"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- privacy body -->
+    <section class="relative bg-white py-16 lg:pt-[5px]">
+        
+            <div class="bg-blue-500 py-10">
+                <h2 class="text-3xl text-slate-700 font-bold text-center">Privacy Policy</h2>
+            </div>
+            <div class="mx-auto max-w-7xl px-8 md:px-6">
+            <div class="my-5">
+                <h3 class="text-md text-slate-700 font-bold sm:text-xl mb-1">Privacy Statement</h3>
+                <p>We (Intergo Telecom Ltd, operators of Sms.to online service) take your privacy very seriously. Your data are handled with ultmost care. Rest assured that your data are handled in the same responsible manner we would like our private data to be handled. We want to make sure you use our service without any concerns.</p>
+            </div>
+            <div class="mb-5">
+                <h3 class="text-md text-slate-700 font-bold sm:text-xl mb-1">Section 1 – What do we do with your information?</h3>
+                <p>When you purchase something from our site, as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address.</p>
+
+                 <p>When you browse our site, we also automatically receive your computer’s internet protocol (IP) address in order to provide us with information that helps us learn about your browser and operating system.</p> 
+                    
+                  <p>Email marketing : With your permission, we may send you emails about our site, new products and other updates.</p>
+            </div>
+            <div class="mb-5">
+                <h3 class="text-md text-slate-700 font-bold sm:text-xl mb-1">Section 2 – Consent</h3>
+                <p>How do you get my consent?</p>
+
+                 <p>When you provide us with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only.</p> 
+                    
+                  <p>If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no.</p>
+                  <p>How do I withdraw my consent?</p>
+                  <p>If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at inquiries@sms.to or mailing us at: Intergo Telecom Ltd Nikolaou Nikolaidi 3, Office 206-Paphos, 8010, Cyprus</p>
+            </div>
+            <div class="mb-5">
+                <h3 class="text-md text-slate-700 font-bold sm:text-xl mb-1">Section 3 – Disclosure</h3>
+                <p>We may disclose your personal information if we are required by law to do so or if you violate our Terms of Service.</p>
+            </div>
+            <div class="mb-5">
+                <h3 class="text-md text-slate-700 font-bold sm:text-xl mb-1">Section 4 – Data Storage</h3>
+                <p>our site is hosted on various Cloud storage providers like Amazon and Google. They store your data on a secure server behind a firewall and information is transmitted through a secure socket transfer protocol.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End privacy body -->
     <footer class="bg-slate-50/80 pt-16">
         <div class="mx-auto max-w-7xl px-8 md:px-6">
             <!-- footer top -->
@@ -123,5 +239,8 @@
             </div>
         </div>
     </footer>
+    <!-- script -->
+    <script src="app.js"></script>
 </body>
+
 </html>
