@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sms landing</title>
+    <link rel="stylesheet" href="style.css">
     <!-- favicon link -->
     <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
     <!-- google font link -->
@@ -25,7 +26,7 @@
     </style>
 </head>
 
-<body>
+<body class="big-wrapper dark">
     <!-- ==== header ==== -->
 
     <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 bg-white/90 w-full backdrop-blur">
@@ -55,10 +56,10 @@
                                 <a href="#"
                                     class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Services</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#"
                                     class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Portfolio</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#"
                                     class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Blog</a>
@@ -74,6 +75,7 @@
                 <div class="flex">
                     <a href="login.html"
                         class="mr-10 hidden rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-600 sm:block lg:mr-0">Register</a>
+                    <img src="assets/moon.png" alt="moon img" id="icon">
 
                     <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'"
                         id="navbarToggler" class="block lg:hidden">
@@ -93,10 +95,11 @@
                 <div class="w-full lg:w-5/12">
                     <h1
                         class="text-slate-800 mb-3 text-4xl font-bold leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px]">
-                        Everything you need to run your online <span class="text-blue-600">business</span></h1>
-                    <p class="text-slate-500 mb-8 max-w-[480px] text-base">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Error distinctio sed quae magnam nulla a necessitatibus inventore soluta porro
-                        minus fugit laudantium, asperiores minima iure.</p>
+                        Reach Your Customers Anytime
+                        <span class="text-blue-600">With Our High Standard SMS API</span>
+                    </h1>
+                    <p class="text-slate-500 mb-8 max-w-[480px] text-base">Movider provides the reliable SMS API that
+                        help you send SMS with the timely and cost efficiently manner</p>
 
                     <button
                         class="w-full rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-600 duration-200 sm:w-auto">Get
@@ -123,7 +126,7 @@
 
                 <div class="w-full px-4 lg:w-6/12">
                     <div class="lg:ml-auto lg:text-right">
-                        <div class="relative z-10 inline-block pt-11 lg:pt-0">
+                        <div class="relative z-10 inline-block pt-11 lg:pt-0 ">
                             <img src="assets/hero.png" alt="hero img" class="max-w-full lg:ml-auto">
                         </div>
                     </div>
@@ -138,7 +141,9 @@
         <div class="mx-auto max-w-7xl px-8 md:px-6">
             <div class="mb-5 sm:mb-10">
                 <!-- <span class="font-medium text-blue-500">Our Features</span> -->
-                <h1 class="text-2xl font-bold text-slate-700 sm:text-3xl">Provide Our Features</h1>
+                <h1 class="text-2xl font-bold text-slate-700 sm:text-3xl">Movider
+                    Web Console
+                    Features</h1>
             </div>
             <!-- features img -->
             <div class="md:flex md:justify-between md:gap-6 xl:gap-10">
@@ -148,16 +153,18 @@
                 </div>
                 <div class="md:w-7/12">
                     <div class="mb-16 flex flex-col">
-                        <p class="mb-3 text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Aspernatur in, enim id eveniet ab recusandae.</p>
-
-                        <p class="mb-10 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-                            ea? Veritatis, alias est voluptatibus dolores quod molestiae eligendi voluptas nostrum quam
-                            reprehenderit voluptatum beatae quas.</p>
-
+                        <h3 class="text-xl font-bold text-slate-700 sm:text-2xl">User friendly</h3>
+                        <p class="mb-3 text-slate-500">Web console built for Marketers and everyone. It requires no
+                            coding skill!</p>
+                        <h3 class="text-xl font-bold text-slate-700 sm:text-2xl">Dashboard analytics</h3>
+                        <p class="mb-10 text-slate-500">where you can see the status of your SMS sent and all the
+                            reports needed.</p>
+                        <h3 class="text-xl font-bold text-slate-700 sm:text-2xl">Worldwide support</h3>
+                        <p class="mb-10 text-slate-500">Sending to the whole world using our Web console. Of course, our
+                            support team is ready to support you.</p>
                         <button
-                            class="w-full rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-600 duration-200 md:w-max">Get
-                            Started</button>
+                            class="w-full rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-600 duration-200 md:w-max">Try
+                            Now</button>
                     </div>
 
                     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -190,42 +197,68 @@
             <div class="md:flex md:justify-between md:gap-6">
                 <div class="md:w-6/12">
                     <!-- heading text -->
-                    <div class="mb-5 sm:mb-10">
+                    <div class="mb-5 sm:mb-5">
                         <!-- <span class="font-medium text-blue-500">About Us</span> -->
-                        <h1 class="text-2xl font-bold text-slate-700 sm:text-3xl">Creative Marketing agency</h1>
+                        <h1 class="text-2xl font-bold text-slate-700 sm:text-3xl">SMS API Gateway Features</h1>
                     </div>
-                    <p class=" text-slate-500 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                        nulla iusto quo. Accusamus, fugiat debitis perferendis enim eaque similique iste amet aliquam
-                        quas, explicabo in laudantium molestiae doloribus labore. Ex.</p>
+                    <p class=" text-slate-500 mb-6">Bigly only charges for telecommunication costs. Pay as you go and forget about long terms contracts.</p>
                     <ul>
                         <li class="mb-6 flex items-center">
                             <div
                                 class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full bg-blue-500 text-white">
                                 <ion-icon name="briefcase-outline"></ion-icon>
                             </div>
-                            <p class="ml-4 max-w-md font-medium text-slate-600">Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Totam, excepturi!</p>
+                            <div class="ml-4">
+                                <h4 class="text-md font-bold text-slate-700 sm:text-lg">Bulk SMS & SMS Marketing</h4>
+                                <p class=" max-w-md font-medium text-slate-600">Send an SMS broadcast to your contact list with merge, tracking and other powerful features</p>
+                            </div>
+                            
                         </li>
                         <li class="mb-6 flex items-center">
                             <div
                                 class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full bg-blue-500 text-white">
                                 <ion-icon name="cube-outline"></ion-icon>
                             </div>
-                            <p class="ml-4 max-w-md font-medium text-slate-600">Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Totam, excepturi!</p>
+                            <div class="ml-4">
+                                <h4 class="text-md font-bold text-slate-700 sm:text-lg">Notification SMS</h4>
+                                <p class=" max-w-md font-medium text-slate-600">Send SMS to your customers when they purchase, make an order or when their Pizza is ready!</p>
+                            </div>
+                            
                         </li>
                         <li class="mb-6 flex items-center">
                             <div
                                 class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full bg-blue-500 text-white">
                                 <ion-icon name="mail-unread-outline"></ion-icon>
                             </div>
-                            <p class="ml-4 max-w-md font-medium text-slate-600">Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. </p>
+                            <div class="ml-4">
+                                <h4 class="text-md font-bold text-slate-700 sm:text-lg">Appointment Reminders</h4>
+                                <p class=" max-w-md font-medium text-slate-600">Schedule SMS for the future and send reminders to your users to avoid no-shows</p>
+                            </div>
+                        </li>
+                        <li class="mb-6 flex items-center">
+                            <div
+                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full bg-blue-500 text-white">
+                                <ion-icon name="mail-unread-outline"></ion-icon>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-md font-bold text-slate-700 sm:text-lg">Two factor verification & One time Passwords</h4>
+                                <p class=" max-w-md font-medium text-slate-600">Powerful SMS API gateway to enable Two Factor Authentication and OTP SMS passwords</p>
+                            </div>
+                        </li>
+                        <li class="mb-6 flex items-center">
+                            <div
+                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full bg-blue-500 text-white">
+                                <ion-icon name="mail-unread-outline"></ion-icon>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-md font-bold text-slate-700 sm:text-lg">Surveys & Feedback Requests</h4>
+                                <p class=" max-w-md font-medium text-slate-600">Quickly run SMS Polls, Survey and request feedback with 2-way SMS</p>
+                            </div>
                         </li>
                     </ul>
-                    <button
+                    <!-- <button
                         class="w-full rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-600 duration-200 md:w-max">Get
-                        Started</button>
+                        Started</button> -->
                 </div>
 
                 <!-- about img -->
@@ -243,7 +276,7 @@
             <!-- heading text -->
             <div class="mb-10 text-center">
                 <!-- <span class="font-medium text-blue-500">Our Services</span> -->
-                <h1 class="text-2xl font-bold text-slate-700 sm:text-3xl">Provide Awesome Services</h1>
+                <h1 class="text-2xl font-bold text-slate-700 sm:text-3xl">Trusted by businesses worldwide</h1>
                 <p class="mx-auto max-w-2 mt-2 text-slate-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Delectus amet sint optio?</p>
             </div>
@@ -255,17 +288,14 @@
                     <ion-icon name="bar-chart-outline"
                         class="text-[55px] text-blue-500 duration-200 group-hover:text-white"></ion-icon>
                     <h4 class="mt-3 mb-1 text-[17px] font-semibold text-slate-600 duration-200 group-hover:text-white">
-                        Crafted for Startups</h4>
-                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Adipisci voluptates, esse in optio sunt veniam.
-                        Voluptas, reprehenderit quam.</p>
+                        Privacy & Regulatory Compliance</h4>
+                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">We will help you stay compliant to different privacy laws and regulations like GDPR with our built in features.</p>
                 </div>
                 <div
                     class="group flex cursor-pointer flex-col items-center rounded-xl border border-blue-500/10 bg-white px-5 py-8 shadow-lg shadow-blue-300/10 duration-200 bg-blue-500">
                     <ion-icon name="extension-puzzle-outline" class="text-[55px]  duration-200 text-white"></ion-icon>
-                    <h4 class="mt-3 mb-1 text-[17px] font-semibold duration-200 text-white">Fully Customizable</h4>
-                    <p class="text-center text-sm duration-200 text-blue-200">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Adipisci voluptates, esse in optio sunt veniam. Voluptas, reprehenderit quam.
+                    <h4 class="mt-3 mb-1 text-[17px] font-semibold duration-200 text-white">ShortLink Tracking</h4>
+                    <p class="text-center text-sm duration-200 text-blue-200">Gather meaningful analytics and activity metrics by tracking clicks on your links.
                     </p>
                 </div>
                 <div
@@ -273,40 +303,32 @@
                     <ion-icon name="speedometer-outline"
                         class="text-[55px] text-blue-500 duration-200 group-hover:text-white"></ion-icon>
                     <h4 class="mt-3 mb-1 text-[17px] font-semibold text-slate-600 duration-200 group-hover:text-white">
-                        Speed Optimized</h4>
-                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Adipisci voluptates, esse in optio sunt veniam.
-                        Voluptas, reprehenderit quam.</p>
+                        Global Delivery</h4>
+                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">Improve Delivery rates by relying on our direct connections with global carriers for time sensitive delivery.</p>
                 </div>
                 <div
                     class="group flex cursor-pointer flex-col items-center rounded-xl border border-blue-500/10 bg-white px-5 py-8 shadow-lg shadow-blue-300/10 duration-200 hover:bg-blue-500">
                     <ion-icon name="diamond-outline"
                         class="text-[55px] text-blue-500 duration-200 group-hover:text-white"></ion-icon>
                     <h4 class="mt-3 mb-1 text-[17px] font-semibold text-slate-600 duration-200 group-hover:text-white">
-                        High-quality Design</h4>
-                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Adipisci voluptates, esse in optio sunt veniam.
-                        Voluptas, reprehenderit quam.</p>
+                        Security & Transparency</h4>
+                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">We invest in Security & Certifications and we are big believers in Transparency providing detailed reporting about any service you buy from us.</p>
                 </div>
                 <div
                     class="group flex cursor-pointer flex-col items-center rounded-xl border border-blue-500/10 bg-white px-5 py-8 shadow-lg shadow-blue-300/10 duration-200 hover:bg-blue-500">
                     <ion-icon name="file-tray-full-outline"
                         class="text-[55px] text-blue-500 duration-200 group-hover:text-white"></ion-icon>
                     <h4 class="mt-3 mb-1 text-[17px] font-semibold text-slate-600 duration-200 group-hover:text-white">
-                        All Essential Sections</h4>
-                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Adipisci voluptates, esse in optio sunt veniam.
-                        Voluptas, reprehenderit quam.</p>
+                        Personalisation & Dynamic Fields</h4>
+                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">Our Powerful Message Editor offers up to 5 dynamic fields to personalise and engage your audience, send meaningful custom reminders and more.</p>
                 </div>
                 <div
                     class="group flex cursor-pointer flex-col items-center rounded-xl border border-blue-500/10 bg-white px-5 py-8 shadow-lg shadow-blue-300/10 duration-200 hover:bg-blue-500">
                     <ion-icon name="cloud-download-outline"
                         class="text-[55px] text-blue-500 duration-200 group-hover:text-white"></ion-icon>
                     <h4 class="mt-3 mb-1 text-[17px] font-semibold text-slate-600 duration-200 group-hover:text-white">
-                        Regular Updates</h4>
-                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Adipisci voluptates, esse in optio sunt veniam.
-                        Voluptas, reprehenderit quam.</p>
+                        Fair Price Promise</h4>
+                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">If you get a lower price elsewhere for an apple to apple comparison in features and service we will try to match it so that you never pay more than you should.</p>
                 </div>
             </div>
         </div>
@@ -702,7 +724,14 @@
         </div>
     </section>
     <!-- ==== End Contact ==== -->
-
+    <!-- <div class="bottom-area">
+        <div class="container">
+            <button class="toggle-btn">
+                <ion-icon name="moon-outline"></ion-icon>
+                <ion-icon name="sunny-outline"></ion-icon>
+            </button>
+        </div>
+    </div> -->
     <!-- ==== Footer ==== -->
     <footer class="bg-slate-50/80 pt-16">
         <div class="mx-auto max-w-7xl px-8 md:px-6">
@@ -802,7 +831,7 @@
             <!-- footer bottom -->
             <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
                 <p class="text-s, text-slate-500">© Copyright 2023 <a href="#"
-                        class="text-slate-700 hover:text-blue-500">smsthunder</a>All rights reserved.</p>
+                        class="text-slate-700 hover:text-blue-500">smsthunder</a> All rights reserved.</p>
                 <div class="mt-4 flex items-center space-x-4 sm:mt-0">
                     <a href="#">
                         <ion-icon name="logo-facebook"
@@ -821,6 +850,7 @@
         </div>
     </footer>
     <!-- ==== End Footer ==== -->
+    <script src="app.js"></script>
 </body>
 
 </html>
