@@ -5,35 +5,246 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tailwind css Login Componentes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ionicons cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- alpine js cdn -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- style css -->
+    <style type="text/tailwindcss">
+        body{
+     font-family: 'Inter', sans-serif;
+ }
+     </style>
 
 </head>
-<body class="w-full h-screen flex justify-center items-center bg-slate-100">
+<body>
+
+  <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 white-color  w-full backdrop-blur">
+    <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
+        <div class="relative flex h-full items-center justify-between border-b border-slate-500/10">
+            <!-- logo -->
+            <div class="w-[15rem] max-w-full">
+                <a href="/">
+                    <img src="assets/logo (1).png" alt="logo" class="w-full">
+                </a>
+            </div>
+
+            <!-- menu -->
+            <div class="flex w-full items-center justify-between">
+                <nav x-transition :class="!navbarOpen && 'hidden'" id="navbarCollapse"
+                    class="absolute right-0 top-[90px] w-full max-w-[350px]  rounded-lg border border-blue-200 bg-white py-5 px-6 shadow-lg shadow-blue-400/5 transition-all lg:static lg:block lg:max-w-full lg:border-none lg:shadow-none lg:bg-transparent lg:px-0 lg:py-0">
+                    <ul class="flex flex-col justify-center gap-8 lg:flex-row">
+                        <li>
+                            <a href="/"
+                                class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Home</a>
+                        </li>
+                        <li>
+                            <a href="features.html"
+                                class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Features</a>
+                        </li>
+                        <li>
+                            <a href="service.html"
+                                class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Services</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#"
+                                class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Portfolio</a>
+                        </li> -->
+                        <li>
+                            <a href="blog.html"
+                                class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- menu btn -->
+            <div class="flex">
+                <a href="login.html"
+                    class="mr-10 hidden rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-600 sm:block lg:mr-0">Register</a>
+
+                <img src="assets/moon.png" alt="moon img" id="icon">
+
+
+
+                <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'"
+                    id="navbarToggler" class="block lg:hidden">
+                    <ion-icon name="menu-outline" class="text-4xl text-blue-500"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+  <div class="w-full h-screen flex justify-center items-center white-color">
     <div class="w-full max-w-sm rounded-lg border border-gray-200 bg-white p-4 shadow-lg shadow-indigo-600/10 dark:border-gray-700 dark:bg-gray-800 sm:p-6 md:p-8">
         <form class="space-y-6" action="#">
           <h5 class="text-xl font-medium text-gray-900 dark:text-white">Tailwind Css</h5>
           <div>
             <label for="email" class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-            <input type="email" name="email" id="email" class="outline-none block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" placeholder="Gmail or Phone" required="" />
+            <input type="email" name="email" id="email" class="outline-none block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" placeholder="Gmail or Phone" required="" />
           </div>
           <div>
             <label for="password" class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300">Your password</label>
-            <input type="password" name="password" id="password" placeholder="Password" class="outline-none block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" required="" />
+            <input type="password" name="password" id="password" placeholder="Password" class="outline-none block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" required="" />
           </div>
           <div class="flex items-start">
             <div class="flex items-start">
               <div class="flex h-5 items-center">
-                <input id="remember" type="checkbox" value="" class="focus:ring-3 h-4 w-4 rounded border border-gray-300 bg-gray-50 focus:ring-indigo-300 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-indigo-600" required="" />
+                <input id="remember" type="checkbox" value="" class="focus:ring-3 h-4 w-4 rounded border border-gray-300 bg-gray-50 focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" required="" />
               </div>
               <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
             </div>
-            <a href="#" class="ml-auto text-sm text-indigo-700 hover:underline dark:text-indigo-500">Lost Password?</a>
+            <a href="#" class="ml-auto text-sm text-blue-500 hover:underline dark:text-blue-500">Lost Password?</a>
           </div>
-          <button type="submit" class="w-full rounded-lg bg-indigo-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">Login your account</button>
-          <div class="text-sm font-medium text-gray-500 dark:text-gray-300">Not registered? <a href="#" class="text-indigo-700 hover:underline dark:text-indigo-500">Create account</a></div>
+          <button type="submit" class="w-full rounded-lg bg-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-indigo-800">Login your account</button>
+          <div class="text-sm font-medium text-gray-500 dark:text-gray-300">Not registered? <a href="#" class="text-blue-500 hover:underline dark:text-blue-500">Create account</a></div>
         </form>
       </div>
-      
+    </div>
+    <!-- footer -->
+    <footer class="white-color pt-16">
+      <div class="mx-auto max-w-7xl px-8 md:px-6">
+          <!-- footer top -->
+          <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
+              <div class="md:max-w-md lg:col-span-2">
+                  <img src="assets/logo (1).png" alt="footer img" class="w-36">
+                  <div class="mt-4 lg:max-w-sm">
+                      <p class="text-sm text-slate-500">Bulk SMS Marketing Platform & SMS Gateway API
+                          for all your SMS needs. OTP, Notifications,
+                          Newsletters, Reminders, Polling, 2 WAY SMS, 2FA.</p>
+                      <p class="text-sm text-slate-500 mt-2">Intergo Telecom Ltd, <br>
+                          Nikolaou Nikolaidi 3, Office 206, Paphos, 8010, Cyprus</p>
+                  </div>
+              </div>
+
+              <div class="grid row-gap-8 grid-cols-2 gap-5 md:grid-cols-4 lg:col-span-4">
+                  <div class="">
+                      <!-- head -->
+                      <p class="font-semibold text-slate-700">Category</p>
+                      <ul class="mt-2 space-y-2">
+                          <li><a href="features.html"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Features</a>
+                          </li>
+                          <li><a href="service.html"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Services</a>
+                          </li>
+                          <li><a href="blog.html"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Blog</a>
+                          </li>
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Reference</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="">
+                      <!-- head -->
+                      <p class="font-semibold text-slate-700">About Us</p>
+                      <ul class="mt-2 space-y-2">
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Web</a>
+                          </li>
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">eCommerce</a>
+                          </li>
+                          <li><a href="Privacy.html"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Privacy</a>
+                          </li>
+                          <li><a href="terms.html"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Terms &
+                                  conditions</a>
+                          </li>
+                          <li><a href="/#contact"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="">
+                      <!-- head -->
+                      <p class="font-semibold text-slate-700">Solutions</p>
+                      <ul class="mt-2 space-y-2">
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Customer</a>
+                          </li>
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Data Platform</a>
+                          </li>
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">SMS Marketing</a>
+                          </li>
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Communications</a>
+                          </li>
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Contact Center</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="">
+
+                      <p class="font-semibold text-slate-700">Company</p>
+                      <ul class="mt-2 space-y-2">
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">About SmsThunder</a>
+                          </li>
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Why SmsThunder</a>
+                          </li>
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Get Help</a>
+                          </li>
+                          <li><a href="#"
+                                  class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Events</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!-- footer bottom -->
+          <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
+              <p class="text-s, text-slate-500">© Copyright 2023 <a href="#"
+                      class="text-slate-700 hover:text-blue-500">smsthunder</a> All rights reserved.</p>
+              <div class="mt-4 flex items-center space-x-4 sm:mt-0">
+                  <a href="#">
+                      <ion-icon name="logo-facebook"
+                          class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
+                  </a>
+                  <a href="#">
+                      <ion-icon name="logo-twitter"
+                          class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
+                  </a>
+                  <a href="#">
+                      <ion-icon name="logo-instagram"
+                          class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- script -->
+   <!-- <script src="app.js"></script> -->
+   <script>
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function(){
+          document.body.classList.toggle("dark-theme");
+          if(document.body.classList.contains("dark-theme")){
+              icon.src = "assets/sun.png"
+          } else {
+              icon.src = "assets/moon.png"
+          }
+      }
+  </script>
 </body>
 </html>
