@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
 .light {
     --mainColor: #64bcf4;
     --hoverColor: #5bacdf;
@@ -16,7 +29,12 @@
     --lightOne: #ccc;
     --lightTwo: #e7e3e3;
 }
-
+.white-color{
+    background: var(--primary-color);
+}
+.black-color{
+    color: var(--secondary-color);
+}
 .container {
     position: relative;
     max-width: 81rem;
@@ -91,4 +109,5 @@ display: none;
     width: 50px;
     height: 40px;
     cursor: pointer;
+    margin-left: 10px;
 }
