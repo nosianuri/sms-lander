@@ -75,10 +75,10 @@
                 <div class="flex">
                     <a href="login.html"
                         class="mr-10 hidden rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-600 sm:block lg:mr-0">Register</a>
-                        
-                            <img src="assets/moon.png" alt="moon img" id="icon">
-                        
-                    
+
+                    <img src="assets/moon.png" alt="moon img" id="icon">
+
+
 
                     <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'"
                         id="navbarToggler" class="block lg:hidden">
@@ -377,17 +377,20 @@
                                     <button type="button" class="w-full rounded-lg bg-blue-50 px-8 py-6 text-left"
                                         @click="selected !==1 ? selected = 1 : selected = null">
                                         <div class="flex items-center justify-between">
-                                            <h4 class="font-medium text-slate-600">How Many Characters Can I Send per SMS?</h4>
+                                            <h4 class="font-medium text-slate-600">How Many Characters Can I Send per
+                                                SMS?</h4>
                                             <ion-icon name="chevron-down-circle-outline"
                                                 class="w-8 text-lg text-blue-500"></ion-icon>
                                         </div>
                                     </button>
 
-                                    <div class="relative max-h-0 overflow-hidden rounded-b-lg bg-blue-50/30 transition-all duration-500"
+                                    <div class="relative max-h-0 overflow-hidden rounded-b-lg bg-blue-70/30 transition-all duration-500"
                                         x-ref="container1"
                                         x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
                                         <div class="p-6">
-                                            <p class="text-slate-500">SMS.to supports the standard 160 characters for a single SMS part. And up to 70 characters if using Unicode. This standard length includes spaces and special characters in length. </p>
+                                            <p class="text-slate-500">SMS.to supports the standard 160 characters for a
+                                                single SMS part. And up to 70 characters if using Unicode. This standard
+                                                length includes spaces and special characters in length. </p>
                                         </div>
                                     </div>
                                 </li>
@@ -405,7 +408,9 @@
                                         x-ref="container2"
                                         x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
                                         <div class="p-6">
-                                            <p class="text-slate-500">SMS.to platform supports both Long Codes and Short Codes. We also provide an option to connect a toll free number on our platform.</p>
+                                            <p class="text-slate-500">SMS.to platform supports both Long Codes and Short
+                                                Codes. We also provide an option to connect a toll free number on our
+                                                platform.</p>
                                         </div>
                                     </div>
                                 </li>
@@ -423,7 +428,9 @@
                                         x-ref="container3"
                                         x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
                                         <div class="p-6">
-                                            <p class="text-slate-500">The campaign log will show all messages sent via web and also include messages sent via our API's Campaign endpoint in an aggregated view.</p>
+                                            <p class="text-slate-500">The campaign log will show all messages sent via
+                                                web and also include messages sent via our API's Campaign endpoint in an
+                                                aggregated view.</p>
                                         </div>
                                     </div>
                                 </li>
@@ -431,7 +438,8 @@
                                     <button type="button" class="w-full rounded-lg bg-blue-50 px-8 py-6 text-left"
                                         @click="selected !==4 ? selected = 4 : selected = null">
                                         <div class="flex items-center justify-between">
-                                            <h4 class="font-medium text-slate-600">How many messages can be delivered at what speed?</h4>
+                                            <h4 class="font-medium text-slate-600">How many messages can be delivered at
+                                                what speed?</h4>
                                             <ion-icon name="chevron-down-circle-outline"
                                                 class="w-8 text-lg text-blue-500"></ion-icon>
                                         </div>
@@ -441,7 +449,9 @@
                                         x-ref="container4"
                                         x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
                                         <div class="p-6">
-                                            <p class="text-slate-500">We are constantly improving our system and scaling our infrastructure dynamically based on the current consumption of our customer base.</p>
+                                            <p class="text-slate-500">We are constantly improving our system and scaling
+                                                our infrastructure dynamically based on the current consumption of our
+                                                customer base.</p>
                                         </div>
                                     </div>
                                 </li>
@@ -457,17 +467,17 @@
     <!-- ==== Portfolio ==== -->
     <!-- <section class="py-16">
         <div class="mx-auto max-w-7xl px-8 md:px-6"> -->
-            <!-- heading text -->
-            <!-- <div class="mb-10 text-center"> -->
-                <!-- <span class="font-medium text-blue-500">Our Portfolio</span> -->
-                <!-- <h1 class="text-2xl font-bold text-slate-700 sm:text-3xl">Our Recent Works</h1>
+    <!-- heading text -->
+    <!-- <div class="mb-10 text-center"> -->
+    <!-- <span class="font-medium text-blue-500">Our Portfolio</span> -->
+    <!-- <h1 class="text-2xl font-bold text-slate-700 sm:text-3xl">Our Recent Works</h1>
                 <p class="mx-auto max-w-2 mt-2 text-slate-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Delectus amet sint optio?</p>
             </div> -->
-            <!-- wrapper -->
-            <!-- <div class="flex flex-col gap-5"> -->
-                <!-- col-1 -->
-                <!-- <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-4">
+    <!-- wrapper -->
+    <!-- <div class="flex flex-col gap-5"> -->
+    <!-- col-1 -->
+    <!-- <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-4">
                     <div class="group relative h-40 overflow-hidden rounded-lg lg:h-52">
                         <img src="assets/p-1.png" alt="portfolio img"
                             class="absolute h-full w-full object-cover duration-200 group-hover:scale-125">
@@ -502,9 +512,9 @@
                         </div>
                     </div>
                 </div> -->
-                <!--End col-1 -->
-                <!-- col-2 -->
-                <!-- <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
+    <!--End col-1 -->
+    <!-- col-2 -->
+    <!-- <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
                     <div class="group relative h-40 overflow-hidden rounded-lg lg:h-52 md:col-span-2">
                         <img src="assets/p-4.png" alt="portfolio img"
                             class="absolute h-full w-full object-cover duration-200 group-hover:scale-125">
@@ -528,9 +538,9 @@
                         </div>
                     </div>
                 </div> -->
-                <!--End col-2 -->
-                <!-- col-3 -->
-                <!-- <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-4">
+    <!--End col-2 -->
+    <!-- col-3 -->
+    <!-- <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-4">
                     <div class="group relative h-40 overflow-hidden rounded-lg lg:h-52">
                         <img src="assets/p-6.png" alt="portfolio img"
                             class="absolute h-full w-full object-cover duration-200 group-hover:scale-125">
@@ -565,8 +575,8 @@
                         </div>
                     </div>
                 </div> -->
-                <!--End col-3 -->
-            <!-- </div>
+    <!--End col-3 -->
+    <!-- </div>
         </div>
     </section> -->
     <!-- ==== End Portfolio ==== -->
@@ -586,13 +596,13 @@
                     <div class="max-h-52 w-full overflow-hidden rounded-t-xl ">
                         <img src="assets/blog-1.png" alt="blog" class="w-full">
                     </div>
-                    <div class="rounded-b-xl px-5 pb-5 pt-3 shadow-md shadow-blue-500/10">
+                    <div class="rounded-b-xl bg-white px-5 pb-5 pt-3 shadow-md shadow-blue-500/10">
                         <div class="">
                             <a href="#"
                                 class="mr-2 rounded-md bg-blue-50 px-3 py-1 text-sm text-slate-800 hover:text-blue-500">SMS
                                 for Salesforce Plugin by SMS.to</a>
                             <a href="#"
-                                class="block pt-4 font-medium capitalize black-color hover:text-blue-500">SMS.to
+                                class="block pt-4 font-medium capitalize text-slate-800 hover:text-blue-500">SMS.to
                                 Salesforce SMS Plugin allows users to seamlessly send and receive text messages directly
                                 from their Salesforce account. […]</a>
                         </div>
@@ -609,7 +619,7 @@
                     <div class="max-h-52 w-full overflow-hidden rounded-t-xl ">
                         <img src="assets/blog-2.png" alt="blog" class="w-full">
                     </div>
-                    <div class="rounded-b-xl px-5 pb-5 pt-3 shadow-md shadow-blue-500/10">
+                    <div class="rounded-b-xl bg-white px-5 pb-5 pt-3 shadow-md shadow-blue-500/10">
                         <div class="">
                             <a href="#"
                                 class="mr-2 rounded-md bg-blue-50 px-3 py-1 text-sm text-slate-800 hover:text-blue-500">SMS
@@ -617,7 +627,7 @@
                             <!-- <a href="#"
                                 class="mr-2 rounded-md bg-blue-50 px-3 py-1 text-sm text-slate-800 hover:text-blue-500">Design</a> -->
                             <a href="#"
-                                class="block pt-4 font-medium capitalize black-color hover:text-blue-500">SMS.to’s
+                                class="block pt-4 font-medium capitalize text-slate-800 hover:text-blue-500">SMS.to’s
                                 Hubspot SMS Plugin is a powerful tool that allows you to easily integrate SMS messaging
                                 into your marketing automation strategy. […]</a>
                         </div>
@@ -633,13 +643,13 @@
                     <div class="max-h-52 w-full overflow-hidden rounded-t-xl ">
                         <img src="assets/blog-3.png" alt="blog" class="w-full">
                     </div>
-                    <div class="rounded-b-xl px-5 pb-5 pt-3 shadow-md shadow-blue-500/10">
+                    <div class="rounded-b-xl bg-white px-5 pb-5 pt-3 shadow-md shadow-blue-500/10">
                         <div class="">
                             <a href="#"
                                 class="mr-2 rounded-md bg-blue-50 px-3 py-1 text-sm text-slate-800 hover:text-blue-500">What
                                 Is Bulk SMS Service?</a>
                             <a href="#"
-                                class="block pt-4 font-medium capitalize black-color hover:text-blue-500">What is
+                                class="block pt-4 font-medium capitalize text-slate-800 hover:text-blue-500">What is
                                 bulk SMS service? It is the dissemination of huge amounts of SMS messages through mobile
                                 phone terminals. Enterprises, […]</a>
                         </div>
@@ -814,16 +824,19 @@
                                     class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Customer</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Data Platform</a>
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Data
+                                    Platform</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">SMS Marketing</a>
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">SMS
+                                    Marketing</a>
                             </li>
                             <li><a href="#"
                                     class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Communications</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Contact Center</a>
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Contact
+                                    Center</a>
                             </li>
                         </ul>
                     </div>
@@ -832,13 +845,16 @@
                         <p class="font-semibold text-slate-700">Company</p>
                         <ul class="mt-2 space-y-2">
                             <li><a href="#"
-                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">About SmsThunder</a>
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">About
+                                    SmsThunder</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Why SmsThunder</a>
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Why
+                                    SmsThunder</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Get Help</a>
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Get
+                                    Help</a>
                             </li>
                             <li><a href="#"
                                     class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Events</a>
@@ -873,9 +889,9 @@
     <script>
         var icon = document.getElementById("icon");
 
-        icon.onclick = function(){
+        icon.onclick = function () {
             document.body.classList.toggle("dark-theme");
-            if(document.body.classList.contains("dark-theme")){
+            if (document.body.classList.contains("dark-theme")) {
                 icon.src = "assets/sun.png"
             } else {
                 icon.src = "assets/moon.png"

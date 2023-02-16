@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 bg-white/90 w-full backdrop-blur">
+    <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 white-color w-full backdrop-blur">
         <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
             <div class="relative flex h-full items-center justify-between border-b border-slate-500/10">
                 <!-- logo -->
@@ -44,15 +44,15 @@
                         <ul class="flex flex-col justify-center gap-8 lg:flex-row">
                             <li>
                                 <a href="#"
-                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Home</a>
+                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Home</a>
                             </li>
                             <li>
                                 <a href="features.html"
-                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Features</a>
+                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Features</a>
                             </li>
                             <li>
                                 <a href="service.html"
-                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Services</a>
+                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Services</a>
                             </li>
                             <!-- <li>
                                 <a href="#"
@@ -60,11 +60,11 @@
                             </li> -->
                             <li>
                                 <a href="blog.html"
-                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Blog</a>
+                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Blog</a>
                             </li>
                             <li>
                                 <a href="#contact"
-                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Contact</a>
+                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -85,11 +85,11 @@
     </header>
 
     <!-- service body -->
-    <section class="py-16">
+    <section class="py-16 white-color ">
         <div class="mx-auto max-w-7xl px-8 md:px-6">
             <div class="mb-5 sm:mb-10">
                 <!-- <span class="font-medium text-blue-500">Our Features</span> -->
-                <h1 class="text-2xl font-bold text-slate-700 sm:text-3xl">Why Movider SMS Service</h1>
+                <h1 class="text-2xl font-bold black-color sm:text-3xl">Why Movider SMS Service</h1>
             </div>
             <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                 <div class="flex flex-col items-center justify-centr rounded-xl bg-white px-4 py-8 shadow-lg">
@@ -122,7 +122,7 @@
     <!-- End service body -->
 
     <!-- footer -->
-    <footer class="bg-slate-50/80 pt-16">
+    <footer class="white-color pt-16">
         <div class="mx-auto max-w-7xl px-8 md:px-6">
             <!-- footer top -->
             <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
@@ -241,7 +241,19 @@
         </div>
     </footer>
     <!-- script -->
-    <script src="app.js"></script>
+     <!-- <script src="app.js"></script> -->
+     <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "assets/sun.png"
+            } else {
+                icon.src = "assets/moon.png"
+            }
+        }
+    </script>
 </body>
 
 </html>
