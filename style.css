@@ -4,7 +4,7 @@
 }
 
 :root{
-    --primary-color: #edf2fc;
+    --primary-color: #fff;
     --secondary-color: #2e2b2b;
 }
 .dark-theme{
@@ -43,7 +43,16 @@
     padding: 0 3rem;
     z-index: 10;
 }
-
+.bg-img{
+    background-image: url(assets/bgPrice-home.webp);
+    
+}
+.below-img{
+    background: url(assets/footer-image-desktop.jpg) no-repeat scroll top center;
+    /* background-size: contain; */
+    border-top-right-radius: 150px;
+    /* border-top-left-radius: 50px; */
+}
 .bg-color{
     background-image: linear-gradient(180deg,#e9eef3,#e9eef3,#f5f6f9,#fafafc,#fff);
 }
@@ -123,4 +132,64 @@ display: none;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 6px;
+}
+/* pricing */
+
+.pricing-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-table-container h2 {
+    margin-right: 32px;
+    font-size: 24px;
+}
+
+.pricing-table-container .plans-switch {
+    width: 250px;
+    background: var(--dark-blue);
+    height: 55px;
+    appearance: none;
+    border-radius: 24px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+.pricing-table-container .plans-switch-container {
+    position: relative;
+    color: #fff;
+    display: inline-block;
+}
+
+.pricing-table-container .plans-switch-container .monthly {
+    position: absolute;
+    left: 36px;
+    top: 18px;
+    pointer-events: none;
+}
+
+.pricing-table-container .plans-switch-container .yearly {
+    position: absolute;
+    right: 36px;
+    top: 18px;
+    pointer-events: none;
+}
+
+.pricing-table-container .plans-switch::before {
+    content: "";
+    position: absolute;
+    height: 44px;
+    width: 120px;
+    border-radius: 24px;
+    background: var(--green);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    transition: all 0.5s;
+}
+
+.pricing-table-container .plans-switch:checked::before {
+    left: 138px;
+    width: 106px;
 }

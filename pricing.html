@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmsThunder | service</title>
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- ionicons cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- alpine js cdn -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- style css -->
+    <style type="text/tailwindcss">
+        body{
+     font-family: 'Inter', sans-serif;
+ }
+     </style>
+</head>
+
+<body>
+    <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 white-color  w-full backdrop-blur">
+        <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
+            <div class="relative flex h-full items-center justify-between border-b border-slate-500/10">
+                <!-- logo -->
+                <div class="w-[15rem] max-w-full">
+                    <a href="/">
+                        <img src="assets/logo (1).png" alt="logo" class="w-full">
+                    </a>
+                </div>
+
+                <!-- menu -->
+                <div class="flex w-full items-center justify-between">
+                    <nav x-transition :class="!navbarOpen && 'hidden'" id="navbarCollapse"
+                        class="absolute right-0 top-[90px] w-full max-w-[350px]  rounded-lg border border-blue-200 bg-white py-5 px-6 shadow-lg shadow-blue-400/5 transition-all lg:static lg:block lg:max-w-full lg:border-none lg:shadow-none lg:bg-transparent lg:px-0 lg:py-0">
+                        <ul class="flex flex-col justify-center gap-8 lg:flex-row">
+                            <li>
+                                <a href="/"
+                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Home</a>
+                            </li>
+                            <li>
+                                <a href="features.html"
+                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Features</a>
+                            </li>
+                            <li>
+                                <a href="service.html"
+                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Services</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="blog.html"
+                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Blog</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu btn -->
+                <div class="flex">
+                    <a href="login.html"
+                        class="mr-10 hidden rounded-md bg-[#4a63e2] px-5 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-600 sm:block lg:mr-0">LogIn</a>
+                    <a href="signup.html"
+                        class="mr-10 hidden rounded-md border-solid border-2 text-blue-500 border-blue-500 px-3 py-2.5 font-semibold shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-500 hover:text-white sm:block lg:mr-0 ml-4">SignUp</a>
+
+                    <img src="assets/moon.png" alt="moon img" id="icon">
+
+
+
+                    <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'"
+                        id="navbarToggler" class="block lg:hidden">
+                        <ion-icon name="menu-outline" class="text-4xl text-blue-500"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- service body -->
+    <section class=" white-color ">
+        <div class="bg-blue-500 py-10">
+            <h2 class="text-3xl text-white font-bold text-center">Find the perfect messaging solution for your business
+            </h2>
+            <p class="text-white text-center mt-5">Drive better customer engagement with America’s premium messaging
+                platform.</p>
+        </div>
+        <div class="mx-auto max-w-7xl px-8 md:px-6 py-16">
+            <div class="mb-5 sm:mb-10">
+
+                <div class="container">
+
+                    <!-- <div class="pricing-header">
+                        <h2>Please choose a plan below</h2>
+            
+                        <div class="plans-switch-container">
+                            <input type="checkbox" class="plans-switch">
+                            <span class="monthly">Monthly</span>
+                            <span class="yearly">Yearly</span>
+                        </div>
+                    </div> -->
+                    <div class="text-center">
+                        <div class="price-toggler rounded-full ">
+                            <span class="month active">monthly</span>
+                            <span class="year">yearly</span>
+                        </div>
+                    </div>
+                    <div class="box-container">
+
+                        <div class="box px-4">
+                            <h3>Basic</h3>
+                            <p class="text-slate-500">Get started quickly with our messaging platform must-haves</p>
+                            <div class="price month"><span>$</span>10.<span>00</span> <span
+                                    class="text-xs text-slate-400">USD/MONTH</span></div>
+                            <div class="price year"><span>$</span>30.<span>00</span><span
+                                    class="text-xs text-slate-400">USD/MONTH</span></div>
+                            <div>
+                                <p class="text-xs mb-5">12 month agreement</p>
+                            </div>
+                            <hr>
+                            <p class="mt-3">All Free Features Plus:
+                            </p>
+                            <ol class="square-list">
+
+                                <li>Customizable Automated Messages</li>
+                                <li>Campaign Builder and Planner</li>
+                                <li>Full Suite of Subscriber Collection Tools</li>
+                                <li>Audience Segmentation</li>
+                                <li>One Free Opt-In Keyword</li>
+                                <li>Two-Way SMS Conversations
+                                </li>
+                                <li>Advanced Analytics & Reporting
+                                </li>
+                                <li>24/7 Email & Chat Support</li>
+                            </ol>
+                            <!-- <div class="list">
+                                <p> <i class="fas fa-check"></i> 1 person </p>
+                                <p> <i class="fas fa-check"></i> 10GB storage </p>
+                                <p> <i class="fas fa-check"></i> 1 domain </p>
+                                <p> <i class="fas fa-check"></i> team support </p>
+                                <p> <i class="fas fa-check"></i> maintenance </p>
+                            </div> -->
+                            <a href="#" class="btn rounded-full text-center">choose plan</a>
+                        </div>
+
+                        <div class="box px-4">
+                            <h3>Standard</h3>
+                            <p class="text-slate-500">Enhanced two-way messaging and customer engagement</p>
+                            <div class="price month"><span>$</span>30.<span>00</span><span
+                                    class="text-xs text-slate-400">USD/MONTH</span></div>
+                            <div class="price year"><span>$</span>50.<span>00</span><span
+                                    class="text-xs text-slate-400">USD/MONTH</span></div>
+                            <div>
+                                <p class="text-xs mb-5">12 month agreement</p>
+                            </div>
+                            <hr>
+                            <p class="mt-3">All Free Features Plus:
+                            </p>
+                            <ol class="square-list">
+                                <li>Unlimited Free Opt-In Keywords</li>
+                                <li>Unlimited A/B Testing</li>
+                                <li>Timezone-based Messages</li>
+                                <li>Business Name as Sender
+                                </li>
+                            </ol>
+                            <a href="#" class="btn rounded-full text-center">choose plan</a>
+                        </div>
+
+                        <div class="box px-4">
+                            <h3>Professional</h3>
+                            <p class="text-slate-500">Richer messaging with automated experiences</p>
+                            <div class="price month"><span>$</span>90.<span>00</span><span
+                                    class="text-xs text-slate-400">USD/MONTH</span></div>
+                            <div class="price year"><span>$</span>150.<span>00</span><span
+                                    class="text-xs text-slate-400">USD/MONTH</span></div>
+                            <div>
+                                <p class="text-xs mb-5">12 month agreement</p>
+                            </div>
+                            <hr>
+                            <p class="mt-3">All Standard Features Plus:
+                            </p>
+                            <ol class="square-list">
+
+                                <li>Customizable Automated Messages</li>
+                                <li>Campaign Builder and Planner</li>
+                                <li>Full Suite of Subscriber Collection Tools</li>
+                                <li>Audience Segmentation</li>
+
+                                <li>Two-Way SMS Conversations
+                                </li>
+                                <li>Advanced Analytics & Reporting
+                                </li>
+
+                            </ol>
+                            <a href="#" class="btn rounded-full text-center">choose plan</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Our difference -->
+                <section class="py-16 bg-[#e9eef3] bg-opacity-50 mt-16">
+                    <div class="mx-auto max-w-7xl px-8 md:px-6 text-center">
+                        <!-- heading text -->
+                        <div class="mb-5 sm:mb-10">
+                            <!-- <span class="font-medium text-blue-500">Our FAQ</span> -->
+                            <h1 class="text-2xl font-bold black-color sm:text-3xl mb-5">Our Difference</h1>
+                            <p>With 20 years of messaging experience, we’re the most trusted partner for exceptional
+                                mobile customer engagement.</p>
+                                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-10">
+                                    <div class="flex flex-col items-center justify-centr rounded-xl bg-white px-4 py-8 shadow-lg">
+                                        
+                                        <h3 class="text-lg font-bold text-slate-600">Best-in-class messaging platform</h3>
+                                        <p class="text-center text-sm text-slate-500">Want more than just 160 characters? With a rich messaging platform tailored for any use case and the best gateway and APIs in the business, we’ve got you covered.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col items-center justify-centr rounded-xl bg-white px-4 py-8 shadow-lg">
+                                        
+                                        <h3 class="text-lg font-bold text-slate-600">Proven and trusted expertise</h3>
+                                        <p class="text-center text-sm text-slate-500">Our trusted messaging experts support over 65,000 customers across every industry, any time of the day. We know the problems you’re facing and how to solve them.</p>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-centr rounded-xl bg-white px-4 py-8 shadow-lg">
+                                        
+                                        <h3 class="text-lg font-bold text-slate-600">Most connected partner</h3>
+                                        <p class="text-center text-sm text-slate-500">With direct links to the carriers, easy ways to integrate with the tools you already use, and strong industry relationships, we make sure you stay well connected.</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Our difference -->
+
+                <!-- <span class="font-medium text-blue-500">Our Features</span> -->
+                <!-- ==== FAQ ==== -->
+                <section class="pt-16 white-color ">
+                    <div class="mx-auto max-w-7xl px-8 md:px-6 text-center">
+                        <!-- heading text -->
+                        <div class="mb-5 sm:mb-10">
+                            <!-- <span class="font-medium text-blue-500">Our FAQ</span> -->
+                            <h1 class="text-2xl font-bold black-color sm:text-3xl mb-5">Frequently Asked Questions</h1>
+                            <!-- wrapper -->
+
+
+                            <div class="md:w-6/12 mx-auto">
+                                <div class="" x-data="{selected:1}">
+                                    <ul>
+                                        <li class="relative mb-5">
+                                            <button type="button"
+                                                class="w-full rounded-lg bg-blue-50 px-8 py-6 text-left"
+                                                @click="selected !==1 ? selected = 1 : selected = null">
+                                                <div class="flex items-center justify-between">
+                                                    <h4 class="font-medium text-slate-600">How Many Characters Can I
+                                                        Send per
+                                                        SMS?</h4>
+                                                    <ion-icon name="chevron-down-circle-outline"
+                                                        class="w-8 text-lg text-blue-500"></ion-icon>
+                                                </div>
+                                            </button>
+
+                                            <div class="relative max-h-0 overflow-hidden rounded-b-lg bg-blue-70/30 transition-all duration-500"
+                                                x-ref="container1"
+                                                x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                                <div class="p-6">
+                                                    <p class="text-slate-500">SMS.to supports the standard 160
+                                                        characters for a
+                                                        single SMS part. And up to 70 characters if using Unicode. This
+                                                        standard
+                                                        length includes spaces and special characters in length. </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="relative mb-5">
+                                            <button type="button"
+                                                class="w-full rounded-lg bg-blue-50 px-8 py-6 text-left"
+                                                @click="selected !==2 ? selected = 2 : selected = null">
+                                                <div class="flex items-center justify-between">
+                                                    <h4 class="font-medium text-slate-600">Long Codes vs. Short Codes
+                                                    </h4>
+                                                    <ion-icon name="chevron-down-circle-outline"
+                                                        class="w-8 text-lg text-blue-500"></ion-icon>
+                                                </div>
+                                            </button>
+
+                                            <div class="relative max-h-0 overflow-hidden rounded-b-lg bg-blue-50/30 transition-all duration-500"
+                                                x-ref="container2"
+                                                x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+                                                <div class="p-6">
+                                                    <p class="text-slate-500">SMS.to platform supports both Long Codes
+                                                        and Short
+                                                        Codes. We also provide an option to connect a toll free number
+                                                        on our
+                                                        platform.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="relative mb-5">
+                                            <button type="button"
+                                                class="w-full rounded-lg bg-blue-50 px-8 py-6 text-left"
+                                                @click="selected !==3 ? selected = 3 : selected = null">
+                                                <div class="flex items-center justify-between">
+                                                    <h4 class="font-medium text-slate-600">How to Check SMS Logs &
+                                                        Status?</h4>
+                                                    <ion-icon name="chevron-down-circle-outline"
+                                                        class="w-8 text-lg text-blue-500"></ion-icon>
+                                                </div>
+                                            </button>
+
+                                            <div class="relative max-h-0 overflow-hidden rounded-b-lg bg-blue-50/30 transition-all duration-500"
+                                                x-ref="container3"
+                                                x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                                <div class="p-6">
+                                                    <p class="text-slate-500">The campaign log will show all messages
+                                                        sent via
+                                                        web and also include messages sent via our API's Campaign
+                                                        endpoint in an
+                                                        aggregated view.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="relative mb-5">
+                                            <button type="button"
+                                                class="w-full rounded-lg bg-blue-50 px-8 py-6 text-left"
+                                                @click="selected !==4 ? selected = 4 : selected = null">
+                                                <div class="flex items-center justify-between">
+                                                    <h4 class="font-medium text-slate-600">How many messages can be
+                                                        delivered at
+                                                        what speed?</h4>
+                                                    <ion-icon name="chevron-down-circle-outline"
+                                                        class="w-8 text-lg text-blue-500"></ion-icon>
+                                                </div>
+                                            </button>
+
+                                            <div class="relative max-h-0 overflow-hidden rounded-b-lg bg-blue-50/30 transition-all duration-500"
+                                                x-ref="container4"
+                                                x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+                                                <div class="p-6">
+                                                    <p class="text-slate-500">We are constantly improving our system and
+                                                        scaling
+                                                        our infrastructure dynamically based on the current consumption
+                                                        of our
+                                                        customer base.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </section>
+    <!-- ==== End FAQ ==== -->
+    </div>
+    <!-- <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className='section'>
+                    <div className='section-title-group max-w-[540px] mx-auto px-4 lg:px-0'>
+                        
+                        <h2 className='h2'>Basic <span className='text-primary-200'>.</span></h2>
+                    </div>
+                    <p> price: '20',</p>
+                    <p> list: </p>
+                    <ol>
+                        <li>'unlimited gym access'</li>
+                        <li>'1 training programs'</li>
+                        <li>'free fitness consultation'</li>
+                    </ol>
+                    <p> delay: 600,</p>
+
+                    
+                </div>
+            </div> -->
+    </div>
+    </section>
+    <!-- End service body -->
+    <div class="text-center py-16 bg-[#e9eef3] bg-opacity-50">
+        <h2 class="text-3xl mb-2  font-semibold ">Get Started with SmsThunder</h2>
+            <p class=" mb-8">The easiest way to send engaging
+                messages to your customers</p>
+        <a href="login.html">
+            <button
+                class="w-full rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-600 duration-200 sm:w-auto">Get
+                Started</button>
+        </a>
+        <a href="contact.html">
+            <button
+                class="mt-4 box-border w-full rounded-md border-solid border-2 border-blue-500 px-8 py-2.5 font-semibold text-blue-500 shadow-md shadow-blue-500/10 duration-200 sm:ml-4 sm:mt-0 sm:w-auto">Contact
+                Us</button>
+        </a>
+    </div>
+    <!-- footer -->
+    <footer class="bg-[#071123] pt-16">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+            <!-- footer top -->
+            <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6 ">
+                <div class="md:max-w-md lg:col-span-2">
+                    <img src="assets/logo (1).png" alt="footer img" class="w-36">
+                    <div class="mt-4 lg:max-w-sm">
+                        <p class="text-sm text-slate-500">Bulk SMS Marketing Platform & SMS Gateway API
+                            for all your SMS needs. OTP, Notifications,
+                            Newsletters, Reminders, Polling, 2 WAY SMS, 2FA.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="grid row-gap-8 grid-cols-2 gap-5 md:grid-cols-4 lg:col-span-4">
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Category</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="features.html"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Features</a>
+                            </li>
+                            <li><a href="service.html"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Services</a>
+                            </li>
+                            <li><a href="blog.html"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Blog</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">About Us</p>
+                        <ul class="mt-2 space-y-2">
+                            <!-- <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Web</a>
+                            </li> -->
+                            <!-- <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">eCommerce</a>
+                            </li> -->
+                            <li><a href="Privacy.html"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Privacy & Policy</a>
+                            </li>
+                            <li><a href="terms.html"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Terms &
+                                    conditions</a>
+                            </li>
+                            <li><a href="/#contact"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Solutions</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Customer</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Data
+                                    Platform</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">SMS
+                                    Marketing</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Communications</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Contact
+                                    Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+
+                        <p class="font-semibold text-slate-700">Company</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">About
+                                    SmsThunder</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Why
+                                    SmsThunder</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Get
+                                    Help</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Events</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- footer bottom -->
+            <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
+                <p class="text-s, text-slate-500">© Copyright 2023 <a href="#"
+                        class="text-slate-700 hover:text-blue-500">SMS Thunder</a> | All rights reserved.</p>
+                <div class="mt-4 flex items-center space-x-4 sm:mt-0">
+                    <a href="#">
+                        <ion-icon name="logo-facebook"
+                            class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-twitter"
+                            class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"
+                            class="text-2xl text-slate-500 hover:text-blue-500 duration-300"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- script -->
+    <script>
+
+        let month = document.querySelector('.price-toggler .month');
+        let year = document.querySelector('.price-toggler .year');
+        let monthAmount = document.querySelectorAll('.box-container .box .month');
+        let yearAmount = document.querySelectorAll('.box-container .box .year');
+
+        year.onclick = () => {
+            year.classList.add('active');
+            month.classList.remove('active');
+
+            monthAmount.forEach(mo => { mo.style.display = 'none' });
+            yearAmount.forEach(yr => { yr.style.display = 'block' });
+        };
+
+        month.onclick = () => {
+            year.classList.remove('active');
+            month.classList.add('active');
+
+            monthAmount.forEach(mo => { mo.style.display = 'block' });
+            yearAmount.forEach(yr => { yr.style.display = 'none' });
+        };
+
+    </script>
+    <!-- <script src="app.js"></script> -->
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "assets/sun.png"
+            } else {
+                icon.src = "assets/moon.png"
+            }
+        }
+    </script>
+</body>
+
+</html>
