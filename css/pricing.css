@@ -30,7 +30,7 @@
 }
 
 .container .box-container .box:nth-child(2){
-  border:2px solid #000;
+  border:2px solid #4a63e2;
 }
 
 .container .box-container .box:nth-child(2) .btn{
@@ -90,20 +90,20 @@
   margin-top: 20px;
   display: inline-block;
   padding:5px;
-  border:2px solid #000;
-  background: #fff;
+  border:2px solid #d1cfcf;
+  background: #e1e0e0;
 }
 
 .container .price-toggler span{
   padding:7px 30px;
   cursor: pointer;
   color:#444;
-  font-size: 20px;
+  font-size: 16px;
   display: inline-block;
 }
 
 .container .price-toggler span.active{
-  background: #444;
+  background: #4a63e2;
   color:#fff;
   border-radius: 50px;
 }
