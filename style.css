@@ -45,7 +45,7 @@
 }
 .bg-img{
     background-image: url(assets/bgPrice-home.webp);
-    
+    background-repeat: no-repeat;
 }
 .below-img{
     background: url(assets/footer-image-desktop.jpg) no-repeat scroll top center;
