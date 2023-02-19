@@ -9,12 +9,6 @@
   text-decoration: none;
 }
 
-.container{
-  /* background: linear-gradient(#ddd 50%, crimson 50.1%);
-  min-height: 100vh; */
-  /* text-align: center; */
-}
-
 .container .box-container{
   max-width: 1200px;
   margin:0 auto;
