@@ -24,15 +24,15 @@
 }
 
 .container .box-container .box:nth-child(2){
-  border:2px solid #4a63e2;
+  border:2px solid #00C1C6;
 }
 
 .container .box-container .box:nth-child(2) .btn{
-  background: #4a63e2;
+  background: #00C1C6;
 }
 
 .container .box-container .box:nth-child(2) .btn:hover{
-  background: #444;
+  background: #002F42;
 }
 
 .container .box-container .box h3{
@@ -43,7 +43,7 @@
 
 .container .box-container .box .price{
   /* color:#fff; */
-  color: #4a63e2;
+  color: #00C1C6;
   font-weight: bolder;
   font-size: 50px;
 }
@@ -64,28 +64,28 @@
 
 .container .box-container .box .list p i{
   padding-right: 5px;
-  color:#4a63e2;
+  color:#00C1C6;
 }
 
 .container .box-container .box .btn{
   margin:20px;
   display: block;
   font-size: 17px;
-  background: #444;
+  background: #002F42;
   color:#fff;
   padding:10px;
 }
 
 .container .box-container .box .btn:hover{
-  background: #4a63e2;
+  background: #00C1C6;
 }
 
 .container .price-toggler{
   margin-top: 20px;
   display: inline-block;
   padding:5px;
-  border:2px solid #d1cfcf;
-  background: #e1e0e0;
+  border:2px solid #b5cdce;
+  background: #d3dfdf;
 }
 
 .container .price-toggler span{
@@ -97,7 +97,7 @@
 }
 
 .container .price-toggler span.active{
-  background: #4a63e2;
+  background: #00C1C6;
   color:#fff;
   border-radius: 50px;
 }

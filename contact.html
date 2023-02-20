@@ -26,7 +26,6 @@
 </head>
 <body>
      <!-- ==== header ==== -->
-
      <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 white-color  w-full backdrop-blur">
         <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
             <div class="relative flex h-full items-center justify-between border-b border-slate-500/10">
@@ -44,27 +43,27 @@
                         <ul class="flex flex-col justify-center gap-8 lg:flex-row">
                             <li>
                                 <a href="/"
-                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Home</a>
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Home</a>
                             </li>
                             <li>
                                 <a href="features.html"
-                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Features</a>
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Features</a>
                             </li>
                             <li>
                                 <a href="service.html"
-                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Services</a>
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Services</a>
                             </li>
                             <li>
                                 <a href="pricing.html"
-                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Pricing</a>
+                                    class="text-lg font-medium text-[#002F42] text-slate-700 duration-200 hover:text-[#00C1C6] lg:text-base">Pricing</a>
                             </li>
                             <li>
                                 <a href="blog.html"
-                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Blog</a>
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Blog</a>
                             </li>
                             <li>
                                 <a href="contact.html"
-                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Contact</a>
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -72,13 +71,10 @@
                 <!-- menu btn -->
                 <div class="flex">
                     <a href="login.html"
-                        class="mr-10 hidden rounded-md bg-[#4a63e2] px-5 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-600 sm:block lg:mr-0">LogIn</a>
+                        class="mr-10 hidden rounded-md bg-[#002F42] px-5 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-[#00C1C6] sm:block lg:mr-0">LogIn</a>
                     <a href="signup.html"
-                        class="mr-10 hidden rounded-md border-solid border-2 text-blue-500 border-blue-500 px-3 py-2.5 font-semibold shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-500 hover:text-white sm:block lg:mr-0 ml-4">SignUp</a>
-
+                        class="mr-10 hidden rounded-md border-solid border-2 text-[#002F42] border-[#002F42] hover:border-[#00C1C6] px-3 py-2.5 font-semibold shadow-md shadow-blue-500/20 duration-200 hover:bg-[#00C1C6] hover:text-white sm:block lg:mr-0 ml-4">SignUp</a>
                     <!-- <img src="assets/moon.png" alt="moon img" id="icon"> -->
-
-
 
                     <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'"
                         id="navbarToggler" class="block lg:hidden">
@@ -92,9 +88,9 @@
 
  <!-- ==== Contact ==== -->
     <section id="contact" class="relative overflow-hidden bg-[#e9eef3] bg-opacity-50 ">
-        <div class="bg-blue-500 py-10">
-            <h2 class="sm:text-3xl text-xl text-white font-bold text-center">Contact Us</h2>
-            <p class="text-white text-center mt-5">We'd love to help you with your business messaging needs. Complete the form below and we'll contact you as soon as possible.</p>
+        <div class="gradient py-5">
+            <h2 class="sm:text-4xl text-xl text-white font-bold text-center">Contact Us</h2>
+            <p class="text-white text-center mt-1">We'd love to help you with your business messaging needs. Complete the form below and we'll contact you as soon as possible.</p>
         </div>
         <div class="mx-auto max-w-7xl px-8 md:px-6 py-16">
             <img src="assets/effect.png" alt="effect" class="absolute bottom-[-400px] -z-10 w-full opacity-[0.2]">
@@ -104,7 +100,7 @@
                     <div class="w-full px-4 md:w-1/2 xl:w-6/12">
                         <div class="mb-12 max-w-[570px] lg:mb-0">
                             <!-- <span class="font-medium text-blue-500">Contact Us</span> -->
-                            <h1 class="mb-3 text-2xl font-bold black-color sm:text-3xl">GET IN TOUCH WITH US</h1>
+                            <h1 class="mb-3 text-2xl text-[#002F42] font-bold black-color sm:text-3xl">GET IN TOUCH WITH US</h1>
                             <p class="black-color mb-8">For all support related issues or to reach our support team,
                                 please contact our Help Center.
                                 For general company related inquiries, please fill out the contact form.</p>
@@ -112,11 +108,11 @@
                             <div
                                 class="mb-8 flex w-full max-w-[420px] items-center rounded-lg bg-white p-4 shadow-md shadow-blue-500/10 gap-5">
                                 <div
-                                    class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-blue-500 bg-opacity-5 text-blue-500 sm:h-[70px] sm:max-w-[70px]">
+                                    class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-[#00C1C6] bg-opacity-5 text-[#00C1C6] sm:h-[70px] sm:max-w-[70px]">
                                     <ion-icon name="location-outline" class="text-3xl"></ion-icon>
                                 </div>
                                 <div class="w-full">
-                                    <h4 class="mb-1 text-xl font-bold text-slate-700">Our Location</h4>
+                                    <h4 class="mb-1 text-xl font-bold text-[#002F42]">Our Location</h4>
                                     <p class="text-base text-slate-400">4236 Woodland Terrace. Sacramento. California
                                     </p>
                                 </div>
@@ -125,11 +121,11 @@
                             <div
                                 class="mb-8 flex w-full max-w-[420px] items-center rounded-lg bg-white p-4 shadow-md shadow-blue-500/10 gap-5">
                                 <div
-                                    class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-blue-500 bg-opacity-5 text-blue-500 sm:h-[70px] sm:max-w-[70px]">
+                                    class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-[#00C1C6] bg-opacity-5 text-[#00C1C6] sm:h-[70px] sm:max-w-[70px]">
                                     <ion-icon name="call-outline" class="text-3xl"></ion-icon>
                                 </div>
                                 <div class="w-full">
-                                    <h4 class="mb-1 text-xl font-bold text-slate-700">Phone Number</h4>
+                                    <h4 class="mb-1 text-xl font-bold text-[#002F42]">Phone Number</h4>
                                     <p class="text-base text-slate-400">(888) 111-1111</p>
                                 </div>
                             </div>
@@ -137,11 +133,11 @@
                             <div
                                 class="mb-8 flex w-full max-w-[420px] items-center rounded-lg bg-white p-4 shadow-md shadow-blue-500/10 gap-5">
                                 <div
-                                    class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-blue-500 bg-opacity-5 text-blue-500 sm:h-[70px] sm:max-w-[70px]">
+                                    class="me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-[##00C1C6] bg-opacity-5 text-[#00C1C6] sm:h-[70px] sm:max-w-[70px]">
                                     <ion-icon name="mail-outline" class="text-3xl"></ion-icon>
                                 </div>
                                 <div class="w-full">
-                                    <h4 class="mb-1 text-xl font-bold text-slate-700">Email Address</h4>
+                                    <h4 class="mb-1 text-xl font-bold text-[#002F42]">Email Address</h4>
                                     <p class="text-base text-slate-400">smsthunder@gmail.com</p>
                                 </div>
                             </div>
@@ -153,23 +149,23 @@
                             <form action="">
                                 <div class="mb-6">
                                     <input type="text" placeholder="Your Name"
-                                        class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none">
+                                        class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-[#00C1C6] focus:outline-none">
                                 </div>
                                 <div class="mb-6">
                                     <input type="email" placeholder="Your Email"
-                                        class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none">
+                                        class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-[#00C1C6] focus:outline-none">
                                 </div>
                                 <div class="mb-6">
                                     <input type="password" placeholder="Your Password"
-                                        class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none">
+                                        class="w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-[#00C1C6] focus:outline-none">
                                 </div>
                                 <div class="mb-6">
                                     <textarea name="message" id="" cols="30" rows="6"
-                                        class="resize-none w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-blue-500 focus:outline-none"></textarea>
+                                        class="resize-none w-full rounded-lg border border-blue-500/20 px-4 py-3 text-slate-500 focus:border-[#00C1C6] focus:outline-none"></textarea>
                                 </div>
                                 <div class="">
                                     <button type="submit"
-                                        class="w-full rounded border border-blue-300 bg-blue-500 p-3 text-white transition-all hover:bg-opacity-90">Send
+                                        class="w-full rounded border border-blue-300 bg-[#002F42] p-3 text-white transition-all hover:bg-opacity-90">Send
                                         Message</button>
                                 </div>
                             </form>
@@ -182,7 +178,7 @@
     <!-- ==== End Contact ==== -->
 
      <!-- footer -->
-     <footer class="bg-[#e9eef3] bg-opacity-80 pt-16 bg-img">
+     <footer class=" pt-16 bg-img">
         <div class="mx-auto max-w-7xl px-8 md:px-6">
             <!-- footer top -->
             <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6 ">
@@ -202,16 +198,16 @@
                         <p class="font-semibold ">Category</p>
                         <ul class="mt-2 space-y-2">
                             <li><a href="features.html"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Features</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Features</a>
                             </li>
                             <li><a href="service.html"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Services</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Services</a>
                             </li>
                             <li><a href="blog.html"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Blog</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Blog</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">FAQ</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">FAQ</a>
                             </li>
                         </ul>
                     </div>
@@ -226,15 +222,15 @@
                                     class="text-slate-500 transition-colors duration-300 hover:text-slate-700">eCommerce</a>
                             </li> -->
                             <li><a href="Privacy.html"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Privacy &
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Privacy &
                                     Policy</a>
                             </li>
                             <li><a href="terms.html"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Terms &
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Terms &
                                     conditions</a>
                             </li>
                             <li><a href="/#contact"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Contact</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -243,21 +239,21 @@
                         <p class="font-semibold ">Solutions</p>
                         <ul class="mt-2 space-y-2">
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Customer</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Customer</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Data
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Data
                                     Platform</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">SMS
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">SMS
                                     Marketing</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Communications</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Communications</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Contact
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Contact
                                     Center</a>
                             </li>
                         </ul>
@@ -267,19 +263,19 @@
                         <p class="font-semibold ">Company</p>
                         <ul class="mt-2 space-y-2">
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">About
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">About
                                     SmsThunder</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Why
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Why
                                     SmsThunder</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Get
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Get
                                     Help</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Events</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Events</a>
                             </li>
                         </ul>
                     </div>
@@ -288,7 +284,7 @@
             <!-- footer bottom -->
             <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
                 <p class="text-sm text-slate-600">© Copyright 2023 <a href="#"
-                        class="text-blue-500 hover:text-blue-500">SMS Thunder</a> | All rights reserved.</p>
+                        class="text-[#00C1C6] hover:text-[#00C1C6]">SMS Thunder</a> | All rights reserved.</p>
                 <div class="mt-4 flex items-center space-x-4 sm:mt-0">
                     <a href="#">
                         <ion-icon name="logo-facebook"

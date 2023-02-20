@@ -28,7 +28,6 @@
 
 <body class="big-wrapper dark white-color">
     <!-- ==== header ==== -->
-
     <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 white-color  w-full backdrop-blur">
         <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
             <div class="relative flex h-full items-center justify-between border-b border-slate-500/10">
@@ -46,27 +45,27 @@
                         <ul class="flex flex-col justify-center gap-8 lg:flex-row">
                             <li>
                                 <a href="/"
-                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Home</a>
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Home</a>
                             </li>
                             <li>
                                 <a href="features.html"
-                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Features</a>
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Features</a>
                             </li>
                             <li>
                                 <a href="service.html"
-                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Services</a>
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Services</a>
                             </li>
                             <li>
                                 <a href="pricing.html"
-                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Pricing</a>
+                                    class="text-lg font-medium text-[#002F42] text-slate-700 duration-200 hover:text-[#00C1C6] lg:text-base">Pricing</a>
                             </li>
                             <li>
                                 <a href="blog.html"
-                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Blog</a>
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Blog</a>
                             </li>
                             <li>
                                 <a href="contact.html"
-                                    class="text-lg font-medium black-color duration-200 hover:text-blue-600 lg:text-base">Contact</a>
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -74,13 +73,10 @@
                 <!-- menu btn -->
                 <div class="flex">
                     <a href="login.html"
-                        class="mr-10 hidden rounded-md bg-[#4a63e2] px-5 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-600 sm:block lg:mr-0">LogIn</a>
+                        class="mr-10 hidden rounded-md bg-[#002F42] px-5 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-[#00C1C6] sm:block lg:mr-0">LogIn</a>
                     <a href="signup.html"
-                        class="mr-10 hidden rounded-md border-solid border-2 text-blue-500 border-blue-500 px-3 py-2.5 font-semibold shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-500 hover:text-white sm:block lg:mr-0 ml-4">SignUp</a>
-
+                        class="mr-10 hidden rounded-md border-solid border-2 text-[#002F42] border-[#002F42] hover:border-[#00C1C6] px-3 py-2.5 font-semibold shadow-md shadow-blue-500/20 duration-200 hover:bg-[#00C1C6] hover:text-white sm:block lg:mr-0 ml-4">SignUp</a>
                     <!-- <img src="assets/moon.png" alt="moon img" id="icon"> -->
-
-
 
                     <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'"
                         id="navbarToggler" class="block lg:hidden">
@@ -94,26 +90,25 @@
 
     <!-- ==== hero ==== -->
 
-    <section class="relative bg-img white-color lg:py-16 lg:pt-[50px]  ">
+    <section class="relative bg-img white-color lg:py-16 lg:pt-[30px]  ">
         <div class="mx-auto max-w-7xl px-8 md:px-6 text-center pb-16 pt-10">
             <div class="max-w-[850px] mx-auto">
-                <h2 class="sm:text-5xl text-2xl font-semibold mb-3 !leading-normal mx-auto">SmsThunder provides the reliable SMS
-                    Platform</h2>
-                <h4 class="sm:text-2xl  text-[#2FA4FF] mb-1">Reach Your Customers Anytime With Our High Standard SMS
-                    platform</h4>
-                <p class="lg:text-lg">Leading SMS messaging
+                <h2 class="sm:text-5xl text-[#002F42] text-2xl font-semibold mb-3 !leading-normal mx-auto">Reach Your Customers Anytime With Our High Standard SMS
+                    platform</h2>
+                
+                <p class="lg:text-lg">Welcome to SMS Thunder, the best SMS platform. Leading SMS messaging
                     service provider offering two-way SMS communication services.</p>
             </div>
 
             <div class="my-10">
                 <a href="login.html">
                     <button
-                        class="w-full rounded-md bg-[#4a63e2] px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-600 duration-200 sm:w-auto">Get
+                        class="w-full rounded-md bg-[#002F42] px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-[#00C1C6] duration-200 sm:w-auto">Get
                         Started</button>
                 </a>
                 <a href="contact.html">
                     <button
-                        class="mt-4 box-border w-full rounded-md border-solid border-2 border-blue-500 px-8 py-2.5 font-semibold text-blue-500 shadow-md shadow-blue-500/10 duration-200 sm:ml-4 sm:mt-0 sm:w-auto">Contact
+                        class="mt-4 box-border w-full rounded-md border-solid border-2 border-[#002F42] px-8 py-2.5 font-semibold text-[#002F42] shadow-md shadow-blue-500/10 duration-200 sm:ml-4 sm:mt-0 sm:w-auto">Contact
                         Us</button>
                 </a>
             </div>
@@ -123,11 +118,11 @@
             <!-- <div class="flex flex-wrap">
                 <div class="w-full lg:w-5/12">
                     <h1
-                        class="black-color mb-3 text-4xl font-bold leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px]">
+                        class=" mb-3 text-4xl font-bold leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px]">
                         Reach Your Customers Anytime
                         <span class="text-blue-600">With Our High Standard SMS API</span>
                     </h1>
-                    <p class="black-color mb-8 max-w-[480px] text-base">SmsThunder provides the reliable SMS API that
+                    <p class=" mb-8 max-w-[480px] text-base">SmsThunder provides the reliable SMS API that
                         help you send SMS with the timely and cost efficiently manner. This is a leading SMS messaging
                         service provider offering two-way SMS communication services from your internet enabled
                         computer.</p>
@@ -315,7 +310,7 @@
         <div class="mx-auto max-w-7xl px-8 md:px-6">
             <div class="mb-5 sm:mb-10">
                 <!-- <span class="font-medium text-blue-500">Our Features</span> -->
-                <h1 class="text-2xl font-bold black-color sm:text-5xl text-center !leading-normal">How Your Business Can
+                <h1 class="text-2xl text-[#002F42] font-bold sm:text-5xl text-center !leading-normal">How Your Business Can
                     Use Text
                     Message Marketing Services</h1>
                 <p class="text-center max-w-[800px] mx-auto mt-2">Our texting service isn't just convenient for your
@@ -332,43 +327,43 @@
                     <div class="mb-16 flex flex-col">
                         <div class="flex gap-5 items-center space-y-2">
                             <div
-                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-blue-500 border border-blue-500">
+                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-[#002F42] border border-[#002F42]">
                                 <ion-icon name="checkmark-outline"></ion-icon>
                             </div>
                             <div>
-                                <h3 class="text-md font-bold black-color sm:text-lg">User friendly</h3>
-                                <p class="mb-3 black-color">Web console built for Marketers and everyone. It requires no
+                                <h3 class="text-md font-bold text-[#002F42] sm:text-lg">User friendly</h3>
+                                <p class="mb-3">Web console built for Marketers and everyone. It requires no
                                     coding skill!</p>
                             </div>
                             
                         </div>
                         <div class="flex gap-5 space-y-2 items-center">
                             <div
-                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-blue-500 border border-blue-500">
+                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-[#002F42] border border-[#002F42]">
                                 <ion-icon name="checkmark-outline"></ion-icon>
                             </div>
                             <div>
-                                <h3 class="text-md font-bold black-color sm:text-lg">Dashboard analytics</h3>
-                                <p class=" black-color">where you can see the status of your SMS sent and all the
+                                <h3 class="text-md font-bold text-[#002F42] sm:text-lg">Dashboard analytics</h3>
+                                <p class="">where you can see the status of your SMS sent and all the
                                     reports needed.</p>
                             </div>
                             
                         </div>
                         <div class="flex gap-5 items-center space-y-2 mb-8">
                             <div
-                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-blue-500 border border-blue-500">
+                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-[#002F42] border border-[#002F42]">
                                 <ion-icon name="checkmark-outline"></ion-icon>
                             </div>
                             <div>
-                                <h3 class="text-md font-bold black-color sm:text-lg">Worldwide support</h3>
-                                <p class=" black-color">Sending to the whole world using our Web console. Of course, our
+                                <h3 class="text-md font-bold text-[#002F42] sm:text-lg">Worldwide support</h3>
+                                <p class="">Sending to the whole world using our Web console. Of course, our
                                     support team is ready to support you.</p>
                             </div>
                             
                         </div>                  
                         <a href="login.html">
                             <button
-                                class="w-full rounded-md bg-[#4a63e2] px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-600 duration-200 md:w-max">Try
+                                class="w-full rounded-md bg-[#002F42] px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-[#00C1C6] duration-200 md:w-max">Try
                                 Now</button>
                         </a>
                     </div>
@@ -405,9 +400,9 @@
         <div class="mx-auto max-w-7xl px-8 md:px-6">
             <div class="mb-5 sm:mb-5">
                 <!-- <span class="font-medium text-blue-500">About Us</span> -->
-                <h1 class="text-2xl font-bold black-color sm:text-5xl">SMS API Gateway Features</h1>
+                <h1 class="text-2xl font-bold text-[#002F42] sm:text-5xl">SMS Gateway Features</h1>
             </div>
-            <p class="max-w-[600px] black-color mb-6">Bigly only charges for telecommunication costs. Pay as you go and
+            <p class="max-w-[600px] mb-6">Bigly only charges for telecommunication costs. Pay as you go and
                 forget about long terms contracts.</p>
             <div class="md:flex md:justify-between md:gap-6">
                 <div class="md:w-6/12">
@@ -416,59 +411,59 @@
                     <ul>
                         <li class="mb-6 flex items-center">
                             <div
-                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-blue-500 border border-blue-500">
+                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-[#002F42] border border-[#002F42]">
                                 <ion-icon name="briefcase-outline"></ion-icon>
                             </div>
                             <div class="ml-4">
-                                <h4 class="text-md font-bold black-color sm:text-lg">Bulk SMS & SMS Marketing</h4>
-                                <p class=" max-w-md font-medium black-color">Send an SMS broadcast to your contact
+                                <h4 class="text-md text-[#002F42] font-bold sm:text-lg">Bulk SMS & SMS Marketing</h4>
+                                <p class=" max-w-md font-medium ">Send an SMS broadcast to your contact
                                     list with merge, tracking and other powerful features</p>
                             </div>
 
                         </li>
                         <li class="mb-6 flex items-center">
                             <div
-                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-blue-500 border border-blue-500">
+                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-[#002F42] border border-[#002F42]">
                                 <ion-icon name="cube-outline"></ion-icon>
                             </div>
                             <div class="ml-4">
-                                <h4 class="text-md font-bold black-color sm:text-lg">Notification SMS</h4>
-                                <p class=" max-w-md font-medium black-color">Send SMS to your customers when they
+                                <h4 class="text-md text-[#002F42] font-bold sm:text-lg">Notification SMS</h4>
+                                <p class=" max-w-md font-medium ">Send SMS to your customers when they
                                     purchase, make an order or when their Pizza is ready!</p>
                             </div>
 
                         </li>
                         <li class="mb-6 flex items-center">
                             <div
-                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-blue-500 border border-blue-500">
+                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-[#002F42] border border-[#002F42]">
                                 <ion-icon name="mail-unread-outline"></ion-icon>
                             </div>
                             <div class="ml-4">
-                                <h4 class="text-md font-bold black-color sm:text-lg">Appointment Reminders</h4>
-                                <p class=" max-w-md font-medium black-color">Schedule SMS for the future and send
+                                <h4 class="text-md text-[#002F42] font-bold sm:text-lg">Appointment Reminders</h4>
+                                <p class=" max-w-md font-medium ">Schedule SMS for the future and send
                                     reminders to your users to avoid no-shows</p>
                             </div>
                         </li>
                         <li class="mb-6 flex items-center">
                             <div
-                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-blue-500 border border-blue-500">
+                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-[#002F42] border border-[#002F42]">
                                 <ion-icon name="earth-outline"></ion-icon>
                             </div>
                             <div class="ml-4">
-                                <h4 class="text-md font-bold black-color sm:text-lg">Two factor verification & One
+                                <h4 class="text-md text-[#002F42] font-bold sm:text-lg">Two factor verification & One
                                     time Passwords</h4>
-                                <p class=" max-w-md font-medium black-color">Powerful SMS API gateway to enable Two
+                                <p class=" max-w-md font-medium ">Powerful SMS API gateway to enable Two
                                     Factor Authentication and OTP SMS passwords</p>
                             </div>
                         </li>
                         <li class="mb-6 flex items-center">
                             <div
-                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-blue-500 border border-blue-500">
+                                class="flex h-[35px] w-[35px] min-w-[35px] items-center justify-center rounded-full text-[#002F42] border border-[#002F42]">
                                 <ion-icon name="bookmarks-outline"></ion-icon>
                             </div>
                             <div class="ml-4">
-                                <h4 class="text-md font-bold black-color sm:text-lg">Surveys & Feedback Requests</h4>
-                                <p class=" max-w-md font-medium black-color">Quickly run SMS Polls, Survey and
+                                <h4 class="text-md text-[#002F42] font-bold sm:text-lg">Surveys & Feedback Requests</h4>
+                                <p class=" max-w-md font-medium">Quickly run SMS Polls, Survey and
                                     request feedback with 2-way SMS</p>
                             </div>
                         </li>
@@ -493,68 +488,68 @@
             <!-- heading text -->
             <div class="mb-10 text-center">
                 <!-- <span class="font-medium text-blue-500">Our Services</span> -->
-                <h1 class="text-2xl font-bold black-color sm:text-5xl">Trusted by businesses worldwide</h1>
-                <p class="mx-auto max-w-2 mt-2 black-color">Send messages to your customers in their preferred channel
+                <h1 class="text-2xl font-bold text-[#002F42] sm:text-5xl">Trusted by businesses worldwide</h1>
+                <p class="mx-auto max-w-2 mt-2">Send messages to your customers in their preferred channel
                     through SMS</p>
             </div>
 
             <!-- box wrapper -->
             <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 xl:gap-8">
                 <div
-                    class="group flex cursor-pointer flex-col items-center rounded-xl px-5 py-8   duration-200 hover:bg-blue-500">
+                    class="group flex cursor-pointer flex-col items-center rounded-xl px-5 py-8 duration-200 hover:bg-[#002F42]">
                     <ion-icon name="headset-outline"
-                        class="text-[55px] text-blue-500 duration-200 group-hover:text-white"></ion-icon>
+                        class="text-[55px] text-[#002F42] duration-200 group-hover:text-white"></ion-icon>
                     <h4 class="mt-3 mb-1 text-[17px] font-semibold text-slate-600 duration-200 group-hover:text-white">
                         Privacy & Regulatory Compliance</h4>
-                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">We will help
+                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-white">We will help
                         you stay compliant to different privacy laws and regulations like GDPR with our built in
                         features.</p>
                 </div>
                 <div
-                    class="group flex cursor-pointer flex-col items-center rounded-xl  px-5 py-8  duration-200 bg-blue-500">
-                    <ion-icon name="analytics-outline" class="text-[55px]  duration-200 text-white"></ion-icon>
+                    class="group flex cursor-pointer flex-col items-center rounded-xl px-5 py-8  duration-200 bg-[#002F42]">
+                    <ion-icon name="analytics-outline" class="text-[55px] duration-200 text-white"></ion-icon>
                     <h4 class="mt-3 mb-1 text-[17px] font-semibold duration-200 text-white">ShortLink Tracking</h4>
-                    <p class="text-center text-sm duration-200 text-blue-200">Gather meaningful analytics and activity
+                    <p class="text-center text-sm duration-200 text-white">Gather meaningful analytics and activity
                         metrics by tracking clicks on your links.
                     </p>
                 </div>
                 <div
-                    class="group flex cursor-pointer flex-col items-center rounded-xl px-5 py-8  duration-200 hover:bg-blue-500">
+                    class="group flex cursor-pointer flex-col items-center rounded-xl px-5 py-8 duration-200 hover:bg-[#002F42]">
                     <ion-icon name="globe-outline"
-                        class="text-[55px] text-blue-500 duration-200 group-hover:text-white"></ion-icon>
+                        class="text-[55px] text-[#002F42] duration-200 group-hover:text-white"></ion-icon>
                     <h4 class="mt-3 mb-1 text-[17px] font-semibold text-slate-600 duration-200 group-hover:text-white">
                         Global Delivery</h4>
-                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">Improve
+                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-white">Improve
                         Delivery rates by relying on our direct connections with global carriers for time sensitive
                         delivery.</p>
                 </div>
                 <div
-                    class="group flex cursor-pointer flex-col items-center rounded-xl  px-5 py-8  duration-200 hover:bg-blue-500">
+                    class="group flex cursor-pointer flex-col items-center rounded-xl  px-5 py-8  duration-200 hover:bg-[#002F42]">
                     <ion-icon name="bag-handle-outline"
-                        class="text-[55px] text-blue-500 duration-200 group-hover:text-white"></ion-icon>
+                        class="text-[55px] text-[#002F42] duration-200 group-hover:text-white"></ion-icon>
                     <h4 class="mt-3 mb-1 text-[17px] font-semibold text-slate-600 duration-200 group-hover:text-white">
                         Security & Transparency</h4>
-                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">We invest in
+                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-white">We invest in
                         Security & Certifications and we are big believers in Transparency providing detailed reporting
                         about any service you buy from us.</p>
                 </div>
                 <div
-                    class="group flex cursor-pointer flex-col items-center rounded-xl  px-5 py-8  duration-200 hover:bg-blue-500">
+                    class="group flex cursor-pointer flex-col items-center rounded-xl  px-5 py-8  duration-200 hover:bg-[#002F42]">
                     <ion-icon name="layers-outline"
-                        class="text-[55px] text-blue-500 duration-200 group-hover:text-white"></ion-icon>
+                        class="text-[55px] text-[#002F42] duration-200 group-hover:text-white"></ion-icon>
                     <h4 class="mt-3 mb-1 text-[17px] font-semibold text-slate-600 duration-200 group-hover:text-white">
                         Personalisation & Dynamic Fields</h4>
-                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">Our Powerful
+                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-white">Our Powerful
                         Message Editor offers up to 5 dynamic fields to personalise and engage your audience, send
                         meaningful custom reminders and more.</p>
                 </div>
                 <div
-                    class="group flex cursor-pointer flex-col items-center rounded-xl  px-5 py-8  duration-200 hover:bg-blue-500">
+                    class="group flex cursor-pointer flex-col items-center rounded-xl  px-5 py-8  duration-200 hover:bg-[#002F42]">
                     <ion-icon name="document-attach-outline"
-                        class="text-[55px] text-blue-500 duration-200 group-hover:text-white"></ion-icon>
+                        class="text-[55px] text-[#002F42] duration-200 group-hover:text-white"></ion-icon>
                     <h4 class="mt-3 mb-1 text-[17px] font-semibold text-slate-600 duration-200 group-hover:text-white">
                         Fair Price Promise</h4>
-                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-blue-200">If you get a
+                    <p class="text-center text-sm text-slate-500 duration-200 group-hover:text-white">If you get a
                         lower price elsewhere for an apple to apple comparison in features and service we will try to
                         match it so that you never pay more than you should.</p>
                 </div>
@@ -569,7 +564,7 @@
             <!-- heading text -->
             <div class="mb-5 sm:mb-10">
                 <!-- <span class="font-medium text-blue-500">Our FAQ</span> -->
-                <h1 class="text-2xl font-bold black-color sm:text-5xl text-center">Frequently Asked Questions</h1>
+                <h1 class="text-2xl text-[#002F42] font-bold sm:text-5xl text-center">Frequently Asked Questions</h1>
                 <!-- wrapper -->
                 <!-- <div class="md:flex md:justify-between md:gap-6"> -->
                 <!-- <div class="mb-8 flex justify-center md:mb-0 md:w-5/12">
@@ -587,7 +582,7 @@
                                         <h4 class="font-medium text-slate-600">How Many Characters Can I Send per
                                             SMS?</h4>
                                         <ion-icon name="chevron-down-circle-outline"
-                                            class="w-8 text-lg text-blue-500"></ion-icon>
+                                            class="w-8 text-lg text-[#00C1C6]"></ion-icon>
                                     </div>
                                 </button>
 
@@ -607,7 +602,7 @@
                                     <div class="flex items-center justify-between">
                                         <h4 class="font-medium text-slate-600">Long Codes vs. Short Codes</h4>
                                         <ion-icon name="chevron-down-circle-outline"
-                                            class="w-8 text-lg text-blue-500"></ion-icon>
+                                            class="w-8 text-lg text-[#00C1C6]"></ion-icon>
                                     </div>
                                 </button>
 
@@ -627,7 +622,7 @@
                                     <div class="flex items-center justify-between">
                                         <h4 class="font-medium text-slate-600">How to Check SMS Logs & Status?</h4>
                                         <ion-icon name="chevron-down-circle-outline"
-                                            class="w-8 text-lg text-blue-500"></ion-icon>
+                                            class="w-8 text-lg text-[#00C1C6]"></ion-icon>
                                     </div>
                                 </button>
 
@@ -648,7 +643,7 @@
                                         <h4 class="font-medium text-slate-600">How many messages can be delivered at
                                             what speed?</h4>
                                         <ion-icon name="chevron-down-circle-outline"
-                                            class="w-8 text-lg text-blue-500"></ion-icon>
+                                            class="w-8 text-lg text-[#00C1C6]"></ion-icon>
                                     </div>
                                 </button>
 
@@ -794,7 +789,7 @@
             <!-- heading text -->
             <div class="mb-5 sm:mb-10">
                 <!-- <span class="font-medium text-blue-500">Our Blog</span> -->
-                <h1 class="text-2xl font-bold black-color sm:text-5xl text-center">From Our Latest Blog</h1>
+                <h1 class="text-2xl font-bold text-[#002F42] sm:text-5xl text-center">From Our Latest Blog</h1>
             </div>
             <!-- wrapper -->
             <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:gap-10">
@@ -806,16 +801,16 @@
                     <div class="rounded-b-xl bg-white px-5 pb-5 pt-3 shadow-md shadow-blue-500/10">
                         <div class="">
                             <a href="sms-for-salesforce-plugin-by-sms-to.html"
-                                class="mr-2 rounded-md bg-blue-50 px-3 py-1 text-sm text-slate-800 hover:text-blue-500">SMS
+                                class="mr-2 rounded-md bg-blue-50 px-3 py-1 text-sm text-slate-800 hover:text-[#00C1C6]">SMS
                                 for Salesforce Plugin by SMS.to</a>
                             <a href="sms-for-salesforce-plugin-by-sms-to.html"
-                                class="block pt-4 font-medium capitalize text-slate-800 hover:text-blue-500">SMS.to
+                                class="block pt-4 font-medium capitalize text-slate-800 hover:text-[#00C1C6]">SMS.to
                                 Salesforce SMS Plugin allows users to seamlessly send and receive text messages directly
                                 from their Salesforce account. […]</a>
                         </div>
                         <hr class="my-4 border-slate-100">
                         <a href="sms-for-salesforce-plugin-by-sms-to.html">
-                            <button class="flex items-center gap-3 text-blue-500 underline"><ion-icon
+                            <button class="flex items-center gap-3 text-[#00C1C6] underline"><ion-icon
                                     name="arrow-redo-outline"></ion-icon> Read More</button>
                         </a>
 
@@ -829,18 +824,18 @@
                     <div class="rounded-b-xl bg-white px-5 pb-5 pt-3 shadow-md shadow-blue-500/10">
                         <div class="">
                             <a href="hubspot-plugin.html"
-                                class="mr-2 rounded-md bg-blue-50 px-3 py-1 text-sm text-slate-800 hover:text-blue-500">SMS
+                                class="mr-2 rounded-md bg-blue-50 px-3 py-1 text-sm text-slate-800 hover:text-[#00C1C6]">SMS
                                 for Hubspot Plugin by SMS.to</a>
                             <!-- <a href="#"
                                 class="mr-2 rounded-md bg-blue-50 px-3 py-1 text-sm text-slate-800 hover:text-blue-500">Design</a> -->
                             <a href="hubspot-plugin.html"
-                                class="block pt-4 font-medium capitalize text-slate-800 hover:text-blue-500">SMS.to’s
+                                class="block pt-4 font-medium capitalize text-slate-800 hover:text-[#00C1C6]">SMS.to’s
                                 Hubspot SMS Plugin is a powerful tool that allows you to easily integrate SMS messaging
                                 into your marketing automation strategy. […]</a>
                         </div>
                         <hr class="my-4 border-slate-100">
                         <a href="hubspot-plugin.html">
-                            <button class="flex items-center gap-3 text-blue-500 underline"><ion-icon
+                            <button class="flex items-center gap-3 text-[#00C1C6] underline"><ion-icon
                                     name="arrow-redo-outline"></ion-icon> Read More</button>
                         </a>
                     </div>
@@ -853,16 +848,16 @@
                     <div class="rounded-b-xl bg-white px-5 pb-5 pt-3 shadow-md shadow-blue-500/10">
                         <div class="">
                             <a href="bulk-sms.html"
-                                class="mr-2 rounded-md bg-blue-50 px-3 py-1 text-sm text-slate-800 hover:text-blue-500">What
+                                class="mr-2 rounded-md bg-blue-50 px-3 py-1 text-sm text-slate-800 hover:text-[#00C1C6]">What
                                 Is Bulk SMS Service?</a>
                             <a href="bulk-sms.html"
-                                class="block pt-4 font-medium capitalize text-slate-800 hover:text-blue-500">What is
+                                class="block pt-4 font-medium capitalize text-slate-800 hover:text-[#00C1C6]">What is
                                 bulk SMS service? It is the dissemination of huge amounts of SMS messages through mobile
                                 phone terminals. Enterprises, […]</a>
                         </div>
                         <hr class="my-4 border-slate-100">
                         <a href="bulk-sms.html">
-                            <button class="flex items-center gap-3 text-blue-500 underline"><ion-icon
+                            <button class="flex items-center gap-3 text-[#00C1C6] underline"><ion-icon
                                     name="arrow-redo-outline"></ion-icon> Read More</button>
                         </a>
                     </div>
@@ -882,17 +877,17 @@
         </div>
     </div> -->
     <div class="text-center py-16 bg-[#e9eef3] bg-opacity-50 px-8">
-        <h2 class="sm:text-5xl text-2xl mb-2  font-semibold ">Get Started with SmsThunder</h2>
+        <h2 class="sm:text-5xl text-2xl mb-2 text-[#002F42] font-semibold ">Get Started with SmsThunder</h2>
         <p class=" mb-8">The easiest way to send engaging
             messages to your customers</p>
         <a href="login.html">
             <button
-                class="w-full rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-600 duration-200 sm:w-auto ">Get
+                class="w-full rounded-md bg-[#002F42] px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-[#00C1C6] duration-200 sm:w-auto ">Get
                 Started</button>
         </a>
         <a href="contact.html">
             <button
-                class="mt-4 box-border w-full rounded-md border-solid border-2 border-blue-500 px-8 py-2.5 font-semibold text-blue-500 shadow-md shadow-blue-500/10 duration-200 sm:ml-4 sm:mt-0 sm:w-auto">Contact
+                class="mt-4 box-border w-full rounded-md border-solid border-2 border-[#002F42] px-8 py-2.5 font-semibold text-[#002F42] shadow-md shadow-blue-500/10 duration-200 sm:ml-4 sm:mt-0 sm:w-auto">Contact
                 Us</button>
         </a>
     </div>
@@ -917,16 +912,16 @@
                         <p class="font-semibold ">Category</p>
                         <ul class="mt-2 space-y-2">
                             <li><a href="features.html"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Features</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Features</a>
                             </li>
                             <li><a href="service.html"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Services</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Services</a>
                             </li>
                             <li><a href="blog.html"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Blog</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Blog</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">FAQ</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">FAQ</a>
                             </li>
                         </ul>
                     </div>
@@ -941,15 +936,15 @@
                                     class="text-slate-500 transition-colors duration-300 hover:text-slate-700">eCommerce</a>
                             </li> -->
                             <li><a href="Privacy.html"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Privacy &
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Privacy &
                                     Policy</a>
                             </li>
                             <li><a href="terms.html"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Terms &
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Terms &
                                     conditions</a>
                             </li>
                             <li><a href="/#contact"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Contact</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -958,21 +953,21 @@
                         <p class="font-semibold ">Solutions</p>
                         <ul class="mt-2 space-y-2">
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Customer</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Customer</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Data
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Data
                                     Platform</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">SMS
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">SMS
                                     Marketing</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Communications</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Communications</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Contact
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Contact
                                     Center</a>
                             </li>
                         </ul>
@@ -982,19 +977,19 @@
                         <p class="font-semibold ">Company</p>
                         <ul class="mt-2 space-y-2">
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">About
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">About
                                     SmsThunder</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Why
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Why
                                     SmsThunder</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Get
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Get
                                     Help</a>
                             </li>
                             <li><a href="#"
-                                    class="text-slate-700 transition-colors duration-300 hover:text-blue-500">Events</a>
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Events</a>
                             </li>
                         </ul>
                     </div>
@@ -1003,7 +998,7 @@
             <!-- footer bottom -->
             <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
                 <p class="text-sm text-slate-600">© Copyright 2023 <a href="#"
-                        class="text-blue-500 hover:text-blue-500">SMS Thunder</a> | All rights reserved.</p>
+                        class="text-[#00C1C6] hover:text-[#00C1C6]">SMS Thunder</a> | All rights reserved.</p>
                 <div class="mt-4 flex items-center space-x-4 sm:mt-0">
                     <a href="#">
                         <ion-icon name="logo-facebook"

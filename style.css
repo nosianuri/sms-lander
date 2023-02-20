@@ -135,7 +135,7 @@ display: none;
 }
 /* pricing */
 
-.pricing-header {
+/* .pricing-header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,4 +192,14 @@ display: none;
 .pricing-table-container .plans-switch:checked::before {
     left: 138px;
     width: 106px;
+} */
+
+
+.gradient{
+    background: linear-gradient(
+    to right,
+    #002F42,
+    #00C1C6,
+    #002F42
+  );
 }
