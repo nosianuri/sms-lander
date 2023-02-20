@@ -285,7 +285,7 @@ font-weight: 600;
     width: 100%;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-gap: 30px;
 }
 .cardBox .card{
@@ -294,6 +294,7 @@ font-weight: 600;
     padding: 30px;
     border-radius: 20px;
     display: flex;
+    /* grid-template-columns: 2fr 1fr; */
     justify-content: space-between;
     cursor: pointer;
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
