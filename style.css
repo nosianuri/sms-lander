@@ -203,3 +203,8 @@ display: none;
     #002F42
   );
 }
+.combined {
+    color: transparent;
+    -webkit-text-stroke: 2px #002F42;
+    text-stroke: 2px #fff;
+ }
