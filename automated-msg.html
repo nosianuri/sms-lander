@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Msg | sms landing</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ionicons cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- alpine js cdn -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- style css -->
+    <style type="text/tailwindcss">
+        body{
+        font-family: 'Inter', sans-serif;
+    }
+        </style>
+</head>
+
+<body>
+    <!-- ==== header ==== -->
+    <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 white-color  w-full backdrop-blur">
+        <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
+            <div class="relative flex h-full items-center justify-between border-b border-slate-500/10">
+                <!-- logo -->
+                <div class="w-[18rem] max-w-full">
+                    <a href="/">
+                        <img src="assets/logo.png" alt="logo" class="w-full">
+                    </a>
+                </div>
+
+                <!-- menu -->
+                <div class="flex w-full items-center justify-between">
+                    <nav x-transition :class="!navbarOpen && 'hidden'" id="navbarCollapse"
+                        class="absolute right-0 top-[90px] w-full max-w-[350px]  rounded-lg border border-blue-200 bg-white py-5 px-6 shadow-lg shadow-blue-400/5 transition-all lg:static lg:block lg:max-w-full lg:border-none lg:shadow-none lg:bg-transparent lg:px-0 lg:py-0">
+                        <ul class="flex flex-col justify-center gap-8 lg:flex-row">
+                            <li>
+                                <a href="/"
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Home</a>
+                            </li>
+                            <li>
+                                <a href="features.html"
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Features</a>
+                            </li>
+                            <li>
+                                <a href="service.html"
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Services</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html"
+                                    class="text-lg font-medium text-[#002F42] text-slate-700 duration-200 hover:text-[#00C1C6] lg:text-base">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="blog.html"
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Blog</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu btn -->
+                <div class="flex">
+                    <a href="login.html"
+                        class="mr-10 hidden rounded-md bg-[#002F42] px-5 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-[#00C1C6] sm:block lg:mr-0">LogIn</a>
+                    <a href="signup.html"
+                        class="mr-10 hidden rounded-md border-solid border-2 text-[#002F42] border-[#002F42] hover:border-[#00C1C6] px-3 py-2.5 font-semibold shadow-md shadow-blue-500/20 duration-200 hover:bg-[#00C1C6] hover:text-white sm:block lg:mr-0 ml-4">SignUp</a>
+                    <!-- <img src="assets/moon.png" alt="moon img" id="icon"> -->
+
+                    <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'"
+                        id="navbarToggler" class="block lg:hidden">
+                        <ion-icon name="menu-outline" class="text-4xl text-blue-500"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ==== End header ==== -->
+
+    <!-- main -->
+    <section class=" white-color">
+        <div class="gradient py-5">
+            <h2 class="text-3xl text-white font-bold text-center">Automated Msg Features
+            </h2>
+            <p class="text-white text-center mt-1">Everything you need to engage with your audience using text messages.
+            </p>
+        </div>
+        <div class="mx-auto max-w-7xl px-8 md:px-6 py-16">
+
+            <div class="text-center max-w-[800px] mx-auto">
+                <h1 class="font-bold sm:text-5xl text-[#002F42] text-2xl !leading-normal">Deliver your message
+                    instantly. Set up SMS Automation.</h1>
+                <p class="mt-3">With automated text messages, you can send the right message at the right time to your
+                    entire audience, all without extra work on your end.</p>
+
+                <div class="mt-8 ">
+                    <a href="login.html">
+                        <button
+                            class="w-full rounded-md bg-[#002F42] px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-[#00C1C6] duration-200 sm:w-auto">Try
+                            Now Free</button>
+                    </a>
+                    <a href="contact.html">
+                        <button
+                            class="mt-4 box-border w-full rounded-md border-solid border-2 border-[#002F42] px-8 py-2.5 font-semibold text-[#002F42] shadow-md shadow-blue-500/10 duration-200 sm:ml-4 sm:mt-0 sm:w-auto">Contact
+                            Us</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="pb-8">
+        <div class="mx-auto max-w-7xl p-8 md:px-6 bg-[#e9eef3] bg-opacity-50">
+            <div>
+                <h2 class="font-bold sm:text-5xl text-[#002F42] text-2xl !leading-normal text-center">What Are Automated
+                    Texts?</h2>
+                <p class="max-w-[800px] mx-auto">Text automation, also known as text messaging automation or SMS
+                    automation, is the automated sending of text messages or SMS messages.
+                    This can be used for a variety of purposes, such as marketing campaigns, customer service
+                    communications, or appointment reminders. It allows businesses to save time and resources, while
+                    sending large volumes of text messages, often with a personalized touch.</p>
+            </div>
+        </div>
+    </section>
+    <section class="pb-8">
+        <div class="mx-auto max-w-7xl p-8 md:px-6">
+            <div class="max-w-[950px] mx-auto">
+                <h2 class="font-bold sm:text-5xl text-[#002F42] text-2xl !leading-normal text-center">The Most Popular
+                    Types of Automated Text Messages</h2>
+                <p class="text-center max-w-[750px] mx-auto">Get inspired by these text automation examples and SMS
+                    workflows that you can use to send personalized messages at the perfect time.</p>
+            </div>
+        </div>
+    </section>
+    <section class="pb-8">
+        <div class="mx-auto max-w-7xl p-8 md:px-6 bg-[#e9eef3] bg-opacity-50">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5 ">
+                <div>
+                    <img src="https://i.ibb.co/frmBKmk/texting.png" alt="" class="">
+                </div>
+                <div>
+                    <h1 class="sm:text-5xl text-2xl text-[#002F42] font-bold">Autoresponders</h1>
+                    <div class="my-8">
+                        <!-- <h4 class="text-xl text-[#002F42] font-semibold">Teammates</h4> -->
+                        <p class="mt-2">With Autoresponder text messages, you can stay connected to your contacts 24/7,
+                            without getting bags under your eyes. </p>
+                        <p class="mt-2">Create Autoresponders to welcome new contacts with a promotional offer, let
+                            customers know how soon they can expect a response from you, or answer frequently asked
+                            questions.</p>
+                        <p class="mt-2 font-semibold">You can schedule automated messages: </p>
+                        <div class="my-3">
+                            <div class="flex"><ion-icon name="checkmark-outline"
+                                    class="text-[#00C1C6] pr-1 text-3xl"></ion-icon>
+                                <div>For a specific time and date, like an event reminder</div>
+                            </div>
+                            <div class="flex"><ion-icon name="checkmark-outline"
+                                    class="text-[#00C1C6] pr-1 text-3xl"></ion-icon>
+                                <div>On a recurring basis for things like weekly tips</div>
+                            </div>
+                            <div class="flex"><ion-icon name="checkmark-outline"
+                                    class="text-[#00C1C6] pr-1 text-3xl"></ion-icon>
+                                <div>Based on a trigger event, like a contact texting a specific keyword to your number
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-8">
+        <div class="mx-auto max-w-7xl p-8 md:px-6 ">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5 ">
+                <div>
+                    <h1 class="sm:text-[45px] text-2xl text-[#002F42] font-bold">Scheduled Text Messages</h1>
+                    <div class="my-8">
+                        <!-- <h4 class="text-xl text-[#002F42] font-semibold">Teammates</h4> -->
+                        <p class="mt-2">Need to send information, announcements, or deals to contacts at a specific time
+                            and date? Scheduled text messages help you do just that.</p>
+                        <p class="mt-2">You’ll avoid having to manually text each contact, and they’ll receive timely
+                            updates and rewards. You can even send automated birthday messages with our Birthday Texts
+                            app.</p>
+                        <p class="mt-2 font-semibold">Create Autoresponders to: </p>
+                        <div class="my-3">
+                            <div class="flex"><ion-icon name="checkmark-outline"
+                                    class="text-[#00C1C6] pr-1 text-3xl"></ion-icon>
+                                <div>Welcome new contacts with a promotional offer</div>
+                            </div>
+                            <div class="flex"><ion-icon name="checkmark-outline"
+                                    class="text-[#00C1C6] pr-1 text-3xl"></ion-icon>
+                                <div>Answer frequently asked questions</div>
+                            </div>
+                            <div class="flex"><ion-icon name="checkmark-outline"
+                                    class="text-[#00C1C6] pr-1 text-3xl"></ion-icon>
+                                <div>Let customers know how soon they can expect a response from you</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/frmBKmk/texting.png" alt="" class="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-8">
+        <div class="mx-auto max-w-7xl p-8 md:px-6 bg-[#e9eef3] bg-opacity-50">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5 items-center">
+                <div>
+                    <img src="https://i.ibb.co/frmBKmk/texting.png" alt="" class="">
+                </div>
+                <div>
+                    <h1 class="sm:text-5xl text-2xl text-[#002F42] font-bold">SMS Drip Campaigns</h1>
+                    <div class="my-8">
+                        <!-- <h4 class="text-xl text-[#002F42] font-semibold">Teammates</h4> -->
+                        <p class="mt-2">Just like in email marketing, you can set up SMS drip campaigns to nurture leads
+                            and increase sales. Our automated texting software makes the set up process a breeze. </p>
+                        <p class="mt-2">This series of automated messages can be triggered based on specific events,
+                            like when a contact opts in to your text list, texts a keyword to your number, or has been
+                            inactive for a period of time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-8">
+        <div class="mx-auto max-w-7xl p-8 md:px-6 ">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5 items-center">
+
+                <div>
+                    <h1 class="sm:text-[45px] text-2xl text-[#002F42] font-bold">Automated Text Reminders</h1>
+                    <div class="my-8">
+                        <!-- <h4 class="text-xl text-[#002F42] font-semibold">Teammates</h4> -->
+                        <p class="mt-2">Automated text message reminders are sent out at a predetermined time to help
+                            reduce no-shows, missed payments, and other issues. </p>
+                        <p class="mt-2">You can create and schedule the reminders manually, or you can integrate
+                            SimpleTexting with popular scheduling tools to automate your workflow. You can use them to
+                            send quarterly survey requests, remind employees about weekly meetings, or check in with
+                            clients periodically.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/frmBKmk/texting.png" alt="" class="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-8 ">
+        <div class="mx-auto max-w-7xl p-8 md:px-6  bg-[#e9eef3] bg-opacity-50">
+            <div class="">
+                <h1
+                    class="sm:text-5xl text-[#002F42] text-2xl font-bold text-center max-w-[800px] mx-auto !leading-normal">
+                    Why Use Automated Text Messaging</h1>
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-8">
+                    <div class="flex flex-col items-center justify-centr rounded-xl  px-4 py-8 ">
+                        <img src="https://i.ibb.co/1JLtWD6/f-1.png" alt="" class="w-16">
+                        <h3 class="text-2xl font-semibold text-[#002F42] mt-2">Save Time</h3>
+                        <p class="text-center text-sm text-slate-500 mt-1">Scheduling messages connects you with leads faster, solves more customer queries, and eliminates tedious communication tasks.</p>
+                        
+                    </div>
+                    <div class="flex flex-col items-center justify-centr rounded-xl px-4 py-8 ">
+                        <img src="https://i.ibb.co/bvdbPdL/f-3.png" alt="" class="w-16">
+                        <h3 class="text-2xl font-semibold text-[#002F42] mt-2">Build Customer Loyalty</h3>
+                        <p class="text-center text-sm text-slate-500 mt-1">Not only does automated texting make you available at any hour, it’s also preferred by customers, according to our latest study.
+                        </p>
+                        
+                    </div>
+                    <div class="flex flex-col items-center justify-center rounded-xl px-4 py-8">
+                        <img src="https://i.ibb.co/syK0pmV/f-2.png" alt="" class="w-16">
+                        <h3 class="text-2xl font-semibold text-[#002F42] mt-2">Drive More Sales</h3>
+                        <p class="text-center text-sm text-slate-500 mt-1">It’s no secret that faster response times lead to higher conversion rates. With automated texting, you can reply within seconds.</p>
+                        
+                    </div>
+                    <div class="flex flex-col items-center justify-centr rounded-xl px-4 py-8">
+                        <img src="https://i.ibb.co/Jd6s1kh/f-4.png" alt="" class="w-16">
+                        <h3 class="text-2xl font-semibold text-[#002F42] mt-2">Onboard New Customers</h3>
+                        <p class="text-center text-sm text-slate-500 mt-1">Build a personalized onboarding experience that’s customized to your customers’ behavior.</p>
+                        
+                    </div>
+                    <div class="flex flex-col items-center justify-centr rounded-xl px-4 py-8">
+                        <img src="https://i.ibb.co/Jd6s1kh/f-4.png" alt="" class="w-16">
+                        <h3 class="text-2xl font-semibold text-[#002F42] mt-2 text-center">Provide Around the Clock Engagement</h3>
+                        <p class="text-center text-sm text-slate-500 mt-1">Avoid missing out on a customer request when you automate your communications strategy.</p>
+                        
+                    </div>
+                    <div class="flex flex-col items-center justify-centr rounded-xl px-4 py-8">
+                        <img src="https://i.ibb.co/Jd6s1kh/f-4.png" alt="" class="w-16">
+                        <h3 class="text-2xl font-semibold text-[#002F42] mt-2">Deliver a Better Experience</h3>
+                        <p class="text-center text-sm text-slate-500 mt-1">Be there for your customers by sending thoughtful messages and providing on-demand responses at the times they need it most.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main -->
+
+    <div class="text-center py-16 bg-[#e9eef3] bg-opacity-50 px-8 bg-img">
+        <h2 class="sm:text-5xl text-2xl mb-2 text-[#002F42] font-semibold ">Get Started with <span
+                class="combined">SmsThunder</span> </h2>
+        <p class=" mb-8">The easiest way to send engaging
+            messages to your customers</p>
+        <a href="login.html">
+            <button
+                class="w-full rounded-md bg-[#002F42] px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-[#00C1C6] duration-200 sm:w-auto ">Get
+                Started</button>
+        </a>
+        <a href="contact.html">
+            <button
+                class="mt-4 box-border w-full rounded-md border-solid border-2 border-[#002F42] px-8 py-2.5 font-semibold text-[#002F42] shadow-md shadow-blue-500/10 duration-200 sm:ml-4 sm:mt-0 sm:w-auto">Contact
+                Us</button>
+        </a>
+    </div>
+    <!-- ==== Footer ==== -->
+    <footer class=" pt-16 bg-img">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+            <!-- footer top -->
+            <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6 ">
+                <div class="md:max-w-md lg:col-span-2">
+                    <img src="assets/footer_logo.png" alt="footer img" class="w-24">
+                    <div class="mt-4 lg:max-w-sm">
+                        <p class="text-sm text-slate-700">Bulk SMS Marketing Platform & SMS Gateway platform
+                            for all your SMS needs. OTP, Notifications,
+                            Newsletters, Reminders, Polling, 2 WAY SMS, 2FA.</p>
+
+                    </div>
+                </div>
+
+                <div class="grid row-gap-8 grid-cols-2 gap-5 md:grid-cols-4 lg:col-span-4">
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold ">Category</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="features.html"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Features</a>
+                            </li>
+                            <li><a href="service.html"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Services</a>
+                            </li>
+                            <li><a href="blog.html"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Blog</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold ">About Us</p>
+                        <ul class="mt-2 space-y-2">
+                            <!-- <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Web</a>
+                            </li> -->
+                            <!-- <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">eCommerce</a>
+                            </li> -->
+                            <li><a href="Privacy.html"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Privacy &
+                                    Policy</a>
+                            </li>
+                            <li><a href="terms.html"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Terms &
+                                    conditions</a>
+                            </li>
+                            <li><a href="/#contact"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold ">Solutions</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Customer</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Data
+                                    Platform</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">SMS
+                                    Marketing</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Communications</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Contact
+                                    Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+
+                        <p class="font-semibold ">Company</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">About
+                                    SmsThunder</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Why
+                                    SmsThunder</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Get
+                                    Help</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-700 transition-colors duration-300 hover:text-[#00C1C6]">Events</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- footer bottom -->
+            <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
+                <p class="text-sm text-slate-600">© Copyright 2023 <a href="#"
+                        class="text-[#00C1C6] hover:text-[#00C1C6]">SMS Thunder</a> | All rights reserved.</p>
+                <div class="mt-4 flex items-center space-x-4 sm:mt-0">
+                    <a href="#">
+                        <ion-icon name="logo-facebook"
+                            class="text-2xl text-slate-800 hover:text-blue-500 duration-300"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-twitter"
+                            class="text-2xl text-slate-800 hover:text-blue-500 duration-300"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"
+                            class="text-2xl text-slate-800 hover:text-blue-500 duration-300"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ==== End Footer ==== -->
+</body>
+
+</html>
